@@ -1,0 +1,44 @@
+/*
+**
+*** Global
+**
+*/
+
+$primary: #F25C27;
+$secondary: #211c19;
+$tertiary: #EEE;
+$legible: #707070;
+$red: #E85356;
+$white: #FFF;
+$black: black;
+$gray: #7f7f7f;
+body 
+{
+	background-color: $primary;
+	color: $primary;
+	font-family: 'Open Sans', sans-serif; 
+}
+
+h1
+{
+	@include rem(font-size, 3.4rem);
+}
+h2
+{	
+	@include rem(font-size, 2.8rem);
+}
+p
+{
+	@include rem(font-size, 1.6rem);
+		@include rem(line-height, 2rem);
+}
+
+.color-secondary
+{
+	color: $secondary;
+}
+
+h1:first-letter, h2:first-letter
+{
+	text-transform: capitalize;
+}

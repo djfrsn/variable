@@ -1,0 +1,113 @@
+.lower_nav
+{
+	background-color: $secondary;
+	color: $legible;
+	h1
+	{
+		color: $primary;
+
+		@include rem(padding-top, 1rem);
+	}
+	h2
+	{
+		color: $primary;
+		@include rem(padding-top, 1rem);
+	}
+	p:first-of-type
+	{
+		color: $white;
+
+		@include rem(padding-bottom, 1rem);
+			@include respond-to(large-palm-bridge)
+			{
+			@include rem(padding-top, 2rem);		
+			}
+	}
+	p:nth-of-type(2n)
+	{
+		@include rem(font-size, 1.5rem);
+	}
+	img
+	{
+		width: 100%;
+
+		@include rem(margin, 2rem 0 1rem);
+		@include rem(max-width, 56rem);
+			@include respond-to(large-palm-bridge)
+			{
+			float: left;		
+
+			@include rem(max-width, 32.9rem);	
+			@include rem(margin-right, 2rem);
+			}
+	}
+}
+
+.lower_nav_wrap
+{
+	margin: 0 auto;
+
+	@include rem(max-width, 63rem);
+	@include respond-to(large-lap)
+	{
+		@include rem(max-width, 107rem);
+		img
+		{
+			@include rem(padding-bottom, 4.5rem);
+		}
+	}
+	@include respond-to(large-palm-bridge-max)
+	{
+		p
+		{
+			overflow: hidden;
+			width: 100%;
+
+			@include rem(max-width, 32.8rem);
+			@include rem(padding-bottom, 4.5rem);
+		}
+	}
+	@include respond-to(small-lap)
+	{
+		p:last-of-type
+		{
+			@include rem(padding-bottom, 4.5rem);
+		}
+	}
+}
+.lower_nav_links
+{
+	color: $primary;
+
+	@include rem(padding-bottom, 4.5rem);
+	h2
+	{
+		@include rem(padding, 1.5rem 0 2rem);	
+	}
+	nav
+	{
+		@include rem(padding-left, 1rem);
+	}
+	ul
+	{
+		float: left;
+		list-style: none;
+
+		@include rem(font-size, 1.5rem);
+		@include rem(margin, 0 1rem 0);
+	}
+	ul:last-of-type
+	{
+		@include rem(padding-left, 1.5rem);
+	}
+	li:before {
+    position: relative;
+    top: 0.9em;
+    left: -1em;
+    display: block;
+    width: 4px;
+    height: 5px;
+    background: url(../imgs/marker-1.png); 
+    content: "";
+	}
+}

@@ -1,0 +1,150 @@
+/* Header
+*/
+
+.header
+{
+    background-color: $primary;
+    h1
+    {
+        color: $secondary;
+    }
+}
+.header.row
+{
+    @include rem(max-width, 117rem);
+}
+
+.header_logo
+{
+    display: inline-block;
+    background-image: url('../imgs/logo_small.png');
+
+    @include rem(margin, 5px 0 0 5px);
+    @include rem(width, 190px); // 322px orig
+    @include rem(height, 38px);
+        @include respond-to(palm)
+        {
+            background-image: url('../imgs/logo.png');
+
+            @include rem(height, 65px);
+            @include rem(width, 322px);
+        }
+        @include respond-to(small-lap)
+        {
+            float: left;
+        }
+        .column
+        {
+                @include respond-to(small-lap)
+    {
+        @include rem(max-width, 1170px);
+    }
+        }
+}
+
+
+/* Nav
+*/
+
+#header_navigation_menu
+{
+    display: inline-block; 
+
+    @include rem(width, 11.3rem);
+    @include rem(margin, 0 0 0 1rem);
+    @include respond-to(small-lap)
+        {
+            margin: 0;
+
+            @include rem(width, 44.2rem);
+            @include rem(padding-top, 2.2rem);
+        }
+        @include respond-to(large-lap-bridge)
+        {
+            padding-right: 0;
+        }
+}
+
+
+
+.menu
+{
+    position: absolute;
+    top: 110%;
+    z-index: 100; 
+    float: right;
+    height: 100%;
+    color: $white;
+    text-transform: uppercase;
+
+    @include rem(right, 2rem);
+    @include rem(width, 113px);
+        @include respond-to(small-lap)
+        {
+            position: static;
+            margin-bottom: 0;
+
+            @include rem(width, 42.2rem);
+        }
+    li 
+    {
+        background-color: $secondary;       
+        list-style: none;   
+        text-align: center; 
+
+        @include rem(padding, 1rem);
+        @include rem(font-size, 1.5rem);
+            @include respond-to(small-lap)
+            {
+                display: inline-block;
+                padding: 0;
+            }
+    }
+    li:nth-child(n+2)
+    {
+        @include respond-to(small-lap)
+        {
+            @include rem(margin-left, -0.3rem);
+        }
+    }
+    li a
+    {
+        @include respond-to(small-lap)
+        {
+            display: block;
+            line-height: 51.5px;
+
+            @include rem(height, 4.8rem);
+            @include rem(width, 7.4rem);
+        }
+    }
+    li:nth-child(n+4) a
+    {
+        @include respond-to(small-lap)
+        {
+            @include rem(width, 10rem);
+        }
+    }
+    li a:hover, a:focus
+    {
+        background-color: $primary; 
+    }
+    .active
+    {
+        background-color: $primary;
+        transition: background-color 0.5s ease;
+
+            @include respond-to(small-lap)
+            {
+                background-color: $primary;
+            }
+    }
+}
+
+ @include respond-to(small-lap)
+        {
+            #show 
+            {
+                display: inline-block;
+            }
+        }

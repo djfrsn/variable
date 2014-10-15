@@ -1,0 +1,22 @@
+/*
+**
+*** Typography 
+**
+*/
+
+// Normalizing text
+// Recommend using padding instead of margin
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'consolas';
+    src: url('../fonts/consolas-webfont.eot');
+    src: url('../fonts/consolas-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/consolas-webfont.woff') format('woff'),
+         url('../fonts/consolas-webfont.ttf') format('truetype'),
+         url('../fonts/consolas-webfont.svg#consolasregular') format('svg');
+}

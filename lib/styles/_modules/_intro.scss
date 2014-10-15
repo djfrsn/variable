@@ -1,0 +1,125 @@
+/*
+**
+*** Intro
+**
+*/
+
+.intro
+{
+    background-color: $secondary;
+
+    @include rem(padding-top, 4rem);
+}
+
+
+.rslides {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1170px; 
+  max-height: 490px;
+  width: 100%;
+  list-style: none;
+  }
+
+.rslides li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+
+  -webkit-backface-visibility: hidden;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  border: 0;
+  }
+
+.intro_content
+{
+	@include respond-to(small-lap-bridge)
+	{
+		@include rem(max-width, 655px);
+	}
+	@include respond-to(small-lap)
+	{
+		max-width: 79.8em;
+	}
+	h1
+	{
+		color: $primary;
+		font-weight: 100;
+
+		@include rem(letter-spacing, -1px);
+		@include rem(margin, 3rem 0 0);
+		@include rem(font-size, 5rem);
+		@include respond-to(small-lap-bridge)
+		{
+			float: left;
+		}
+		@include respond-to(small-lap)
+		{
+			@include rem(padding-left, 4rem);
+		}
+	}
+	h1:first-letter
+	{
+		font-weight: 300;
+	}
+	p
+	{
+		@include rem(font-size, 1.5rem);
+		@include respond-to(small-lap-bridge)
+		{
+		}
+	}
+}
+@include respond-to(small-lap-bridge)
+{
+	.intro_parcel
+	{
+		display: inline-block;
+		width: 100%;
+		border-left: 1px solid $gray;
+
+		@include rem(max-width, 39rem);
+		@include rem(padding, 2rem 0 0 2rem);
+		@include rem(margin, 2rem 0 4rem 2rem);
+	}
+}
+
+.intro_download_button
+{
+	background-color: $primary; 
+	color: $white;
+	text-transform: capitalize;
+
+	@include rem(margin, 2rem auto 4.5rem);
+	@include rem(width, 15rem);
+	@include rem(height, 30px);
+	@include rem(font-size, 14px);
+	@include respond-to(small-lap-bridge)
+		{
+			text-align: center;
+
+			@include rem(margin, 2rem auto 0);
+		}	
+	p
+	{
+		@include rem(line-height, 3rem);
+		@include rem(padding, 0 1.8rem);
+	}
+}
+

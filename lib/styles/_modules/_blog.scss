@@ -1,0 +1,155 @@
+
+.blog
+{
+	background-color: $white;
+	h1
+	{
+		color: $primary;
+		font-weight: 300;
+
+		@include rem(font-size, 5rem);	
+		@include rem(padding, 3rem 0 1rem);	
+	}
+	h2
+	{
+		color: $primary;
+		text-transform: capitalize;
+
+		@include rem(font-size, 3rem);		
+	}
+	img
+	{
+		width: 100%;
+
+		@include rem(margin-top, 2rem);
+		@include rem(max-width, 56rem);
+		@include respond-to(large-palm-bridge)
+		{
+		@include rem(max-width, 32.9rem);			
+		}
+	}
+}
+
+.blog_wrap
+{
+	@include respond-to(large-palm-bridge)
+	{
+		margin: 0 auto;
+
+		@include rem(width, 55.6rem);
+	}
+	@include respond-to(large-lap-bridge)
+	{
+		width: 100%;
+
+		@include rem(max-width, 113.2rem)
+	}
+}
+@include respond-to(large-lap-bridge)
+{
+	.blog
+	{
+		article:nth-child(4)
+		{
+			@include rem(margin-left, 2rem);	
+		}
+		article:nth-child(5)
+		{
+			@include rem(margin-bottom, 7rem);	
+		}
+	}
+}
+.blog
+{
+	h1
+	{
+		@include rem(margin-bottom, 2rem);
+	}
+		@include respond-to(large-palm-bridge)
+	{    
+		article:nth-of-type(2n)
+		{
+		@include rem(margin, 0 auto 0 2rem);
+		}
+	}
+}
+
+
+.blog_widget
+{
+	@include respond-to(large-palm-bridge)
+	{
+		float: left;
+
+		@include rem(max-width, 26.8rem);
+	}
+	h1
+	{
+		@include rem(margin-top, 1rem);
+	}
+	p
+	{
+		@include rem(font-size, 1.55rem);
+	}
+}	
+
+.blog_widget_details
+{
+	@include rem(margin-top, 1rem);
+	p
+	{
+		display: inline;
+
+		@include rem(font-size, 1.5rem);
+		@include rem(padding, 0 0.7rem 0 0.5rem);
+	}
+	p:nth-of-type(2n), p:last-of-type
+	{
+		color: $primary;
+	}
+}
+.float-right
+{
+	float: right;
+}
+.blog_teaser
+	{
+		@include rem(margin-top, 1rem);
+	}
+
+.blog_read_more
+{
+	padding-top: 0.5rem;
+	background-color: $primary;
+	color: $white;
+	font-style: italic;
+
+	@include rem(width, 11rem);
+	@include rem(height, 3rem);
+	@include rem(margin, 2.5rem 0 2rem);
+	@include rem(font-size, 1.5rem);
+	p
+	{
+		text-align: center;
+	}
+}
+
+.blog_post_short
+{
+	color: $primary;
+
+	@include rem(margin-top, 1rem);
+}
+
+.blog_button
+{
+	background-color: $primary;
+	color: $white;
+	font-style: italic;
+
+	@include rem(width, 9rem);
+	@include rem(height, 3rem);
+	@include rem(margin, 2rem 0 4rem);
+	@include rem(font-size, 1.5rem);
+	@include rem(padding, 0.8rem 0.5rem 0 0.7rem);
+}

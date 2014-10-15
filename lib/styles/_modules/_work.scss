@@ -1,0 +1,119 @@
+/*
+**
+*** Projects
+**
+*/
+
+.work
+{	
+	background-color: $white;
+	h1
+	{
+		color: $primary;
+		text-transform: capitalize; 
+		font-weight: 300;
+
+		@include rem(margin, 3rem 0 0);
+		@include rem(font-size, 5rem);
+	}
+	img
+	{
+		float: left;
+		width: 100%;
+
+		@include rem(margin-top, 3rem);
+		@include rem(max-width, 44rem);
+		@include respond-to(large-palm)
+		{
+		float: left;
+
+		@include rem(max-width, 20.6rem);			
+		}
+		@include respond-to(small-lap)
+		{
+			@include rem(margin-left, 2rem);
+		}
+	}
+	img:nth-of-type(2n)
+	{
+		@include respond-to(large-palm-max)
+		{
+		@include rem(margin-left, 2rem);
+		}
+	}
+	img:last-of-type
+	{
+		@include rem(margin-bottom, 3rem);
+			@include respond-to(small-lap)
+			{
+				margin-bottom: 7rem;
+			}
+	}
+	img:nth-child(2), img:nth-child(5), img:nth-child(8)
+	{
+		@include respond-to(small-lap)
+		{
+			margin-left: 0;
+		}
+		@include respond-to(small-lap)
+		{
+			margin-left: 2rem;
+		}
+	}
+}
+
+
+.work .no-margin-left
+{
+	margin-left: 0;
+}
+
+
+/******************
+
+	Media Query
+	
+******************/
+
+@include respond-to(large-palm)
+{
+	.work_wrap
+	{
+		margin: 0 auto;
+
+		@include rem(width, 44rem);
+	}
+}
+@include respond-to(small-lap)
+{
+	.work_wrap
+	{
+		margin: 0 auto;
+
+		@include rem(width, 68rem);
+		h1
+		{
+			@include rem(padding-left, 1.5rem);
+		}
+	}
+}
+@include respond-to(lap)
+{
+	.work_wrap
+	{
+		margin: 0 auto;
+
+		@include rem(width, 62rem);
+	}
+}
+@include respond-to(desk)
+{
+	.work_wrap
+	{
+		width: 100%;
+		
+		margin: 0 auto;
+
+		@include rem(max-width, 91rem);
+	}
+}

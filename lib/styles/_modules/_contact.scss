@@ -1,0 +1,199 @@
+.contact
+{
+	background-color: $secondary;
+	@include rem(padding, 2rem 0 4rem);
+	@include rem(padding, 2rem 0 4rem);
+	h2
+	{
+		color: $primary;
+	} 
+	p:first-of-type
+	{
+		color: $gray;
+	}
+	p
+	{
+		color: $white;
+		@include rem(font-size, 1.4rem);
+	}
+	a
+	{
+		color: $gray;
+	}
+	.primary
+	{
+		color: $primary;
+	}
+	.mobile
+	{
+		@include rem(padding-left, 3.2rem);
+	}.tel
+	{
+		@include rem(padding-left, 0.8rem);
+	}
+	.fax
+	{
+		@include rem(padding-left, 5rem);	
+	}
+	.email
+	{
+		@include rem(padding-left, 3.4rem);
+	}
+	.skype
+	{
+		@include rem(padding-left, 3.7rem);
+	}
+}
+.field {
+  margin: 1em 0;
+}
+
+placeholder {
+	@include rem(font-size, 1.4rem);  
+}
+
+input {
+  width: 100%;
+  padding: 0.5em 0.5em;
+  
+@include rem(font-size, 1.4rem);
+  border-radius: 3px;
+  color: $primary;
+  background-color: $secondary;
+  border: none;
+  border-bottom: 1px dashed $primary;
+}
+
+textarea {
+  width: 100%;
+  height: 200px;
+  padding: 0.5em 0.5em;
+  @include rem(font-size, 1.4rem);
+  background-color: $secondary;
+  border-radius: 3px;
+  color: $primary;
+  border: none;
+  border-bottom: 1px dashed #F25C27;
+}
+button
+{
+	padding: 0.8rem 0.3rem 0.8rem 0;
+	background-color: #f25c27;
+	color: white;
+	font-style: italic;
+	width: 110px;
+	width: 7rem;
+	height: 30px;
+	font-size: 20px;
+	font-size: 1.4rem;
+}
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #999;
+    background: $secondary;
+}
+
+#google-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: $primary;
+
+    @include respond-to(small-lap) {
+    	height: 300px;
+    }
+
+    @include respond-to(large-lap) {
+    	height: 600px;
+    }
+}
+
+#cd-google-map {
+	position: relative;
+
+	address {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		padding: 1em 1em;
+		background-color: $primary;
+		color: $secondary;
+		@include rem(font-size, 13px);
+
+		@include respond-to(small-lap) {
+			@include rem(font-size, 15px);
+			text-align: center;
+		}
+	}
+}
+
+#cd-zoom-in, #cd-zoom-out {
+	height: 32px;
+	width: 32px;
+	cursor: pointer;
+	margin-left: 10px;
+	background-color: $primary;
+	background-repeat: no-repeat;
+	background-size: 32px 64px;
+	background-image: url('../img/cd-icon-controller.svg');
+
+	.no-touch &:hover {
+		background-color: $primary;
+	}
+
+	@include respond-to(small-lap) {
+		margin-left: 50px;
+	}
+}
+
+#cd-zoom-in {
+	background-position: 50% 0;
+	margin-top: 10px;
+	margin-bottom: 1px;
+
+	@include respond-to(small-lap) {
+		margin-top: 50px;
+	}
+}
+
+#cd-zoom-out {
+	background-position: 50% -32px;
+}

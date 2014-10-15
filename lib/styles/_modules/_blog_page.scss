@@ -1,0 +1,239 @@
+
+.blog_page
+{
+	background-color: $secondary;
+	@include rem(padding-bottom, 2rem);
+	h1
+	{
+		color: $primary;
+		font-weight: 300;
+
+		@include rem(font-size, 5rem);	
+		@include rem(padding, 3rem 0 1rem);	
+	}
+	h2
+	{
+		color: $primary;
+		text-transform: capitalize;
+		@include rem(padding-top, 2rem);
+		@include rem(font-size, 3rem);		
+	}
+	img
+	{
+		width: 100%;
+
+		@include rem(margin-top, 2rem);
+		@include rem(max-width, 56rem);
+		@include respond-to(large-palm-bridge)
+		{
+		@include rem(max-width, 76.8rem);			
+		}
+	}
+	@include respond-to(blog_page)
+	{
+		.medium-8
+		{
+		width: 100%;
+		}
+	}
+}
+.hr
+{
+	background: url("../imgs/border-horiz.gif") repeat-x 0 bottom; 
+	width: 100%;
+	height: 2px;
+}
+.blog_page_wrap
+{
+	@include rem(padding-top, 2rem);
+}
+@include respond-to(desk)
+{
+	.blog_widgets
+	{
+		@include rem(max-width, 76.8rem);
+	}
+	.blog_page_wrap
+	{
+		@include rem(max-width, 128rem);
+		margin: 0 auto;
+	}
+}
+@include respond-to(large-lap-bridge)
+{
+	.blog_page
+	{
+		article:nth-child(5)
+		{
+			@include rem(margin-bottom, 7rem);	
+		}
+	}
+}
+.blog_page
+{
+	h1
+	{
+		@include rem(margin-bottom, 2rem);
+	}
+}
+
+@include respond-to(large-palm-bridge)
+{
+	.blog_page_widget
+	{
+		float: left;
+
+		@include rem(max-width, 76.8rem);
+	}
+	h1
+	{
+		@include rem(margin-top, 1rem);
+	}
+	p
+	{
+		@include rem(font-size, 1.55rem);
+	}
+}	
+.blog_page_widget_details
+{
+	p
+	{
+		display: inline;
+
+		@include rem(font-size, 1.5rem);
+		@include rem(padding, 0 0.7rem 0 0.5rem);
+	}
+	p:nth-of-type(2n), p:last-of-type
+	{
+		color: $primary;
+	}
+	i
+	{
+		color: $white;
+	}
+}
+.float-right
+{
+	float: right;
+}
+.blog_page_teaser
+	{
+		@include rem(margin-top, 2rem);
+	}
+
+.blog_page_read_more
+{
+	padding-top: 0.5rem;
+	background-color: $primary;
+	color: $white;
+	font-style: italic;
+
+	@include rem(width, 11rem);
+	@include rem(height, 3rem);
+	@include rem(margin, 2.5rem 0 2rem);
+	@include rem(font-size, 1.5rem);
+	p
+	{
+		text-align: center;
+	}
+}
+
+.blog_page_post_short
+{
+	color: $primary;
+	@include rem(margin-top, 1rem);
+}
+
+.blog_page_button
+{
+	background-color: $primary;
+	color: $white;
+	font-style: italic;
+
+	@include rem(width, 9rem);
+	@include rem(height, 3rem);
+	@include rem(margin, 2rem 0 4rem);
+	@include rem(font-size, 1.5rem);
+	@include rem(padding, 0.8rem 0.5rem 0 0.7rem);
+}
+
+aside
+{
+	float: left !important;
+	@include rem(margin, 2rem 0 0 0);
+	@include respond-to(small-lap)
+	{
+		margin: inherit;
+	}
+	h2:first-of-type
+	{
+		@include rem(padding-top, 4rem);
+	}
+	h2
+	{
+		@include rem(padding-top, 2rem);
+	}
+	input
+	{
+		display: inline-block;
+		width: 60%;
+		height: 3.3rem;
+	}
+	div
+	{
+	position: relative;
+	@include rem(top, 0.3rem);
+	background-color: $primary;
+	display: inline-block;
+	color: $white;
+	font-style: italic;
+	@include rem(width, 7rem);
+	@include rem(height, 3.35rem);
+	@include rem(margin, 1rem 0 1rem 0.5rem);
+	@include rem(font-size, 1.5rem);
+	@include rem(padding, 1rem 0.5rem 0 0.7rem);
+	a
+	{
+		@include rem(padding-left, 0.4rem);
+	}
+	}
+	ul
+	{
+		@include rem(font-size, 1.5rem);
+		@include rem(max-width, 20rem);
+		list-style: none;
+		@include rem(padding, 0 0 0 2rem);
+	}
+	ul:first-of-type
+	{
+		
+	}
+	ul:nth-of-type(2)
+	{
+		display: inline-block;
+		@include respond-to(small-lap)
+		{
+			display: block;
+		}
+	}
+	ul:last-of-type
+	{
+		display: inline-block;
+		@include rem(margin-bottom, 4rem);
+		@include respond-to(small-lap)
+		{
+			display: block;
+		}
+	}
+	li:before {
+    position: relative;
+    top: 0.9em;
+    left: -1em;
+    display: block;
+    width: 4px;
+    height: 5px;
+    background: url(../imgs/marker-1.png); 
+    content: "";
+	}
+}
+

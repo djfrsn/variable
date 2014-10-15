@@ -1,0 +1,42 @@
+.footer
+{
+	background-color: $white;
+	color: $primary;
+
+	@include rem(padding, 3rem 1rem);
+	p
+	{
+		text-align: center;
+	}
+	i
+	{
+		color: $red;
+
+		@include rem(padding-right, 0.5rem);
+	}
+}
+
+@include respond-to(large-palm-bridge)
+{
+	.footer_social_icons
+	{
+		float: right;
+		@include rem(padding-right, 5rem);
+	}
+}
+
+@include respond-to(large-lap)
+{
+	.footer_social_icons
+	{
+		@include rem(padding, 0 4rem);
+	}
+}
+
+@include respond-to(desk)
+{
+	.footer_social_icons
+	{
+		padding:0 20% 0 0;
+	}
+}

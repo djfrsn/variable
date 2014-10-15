@@ -1,0 +1,59 @@
+.process
+{
+	background-color: $secondary; 
+	article
+	{
+		background-color: $black; 
+		@include rem(margin, 1rem 0 3.5rem);
+		@include rem(max-width, 54rem);
+		@include respond-to(large-lap)
+		{
+			@include rem(max-width, 35rem);
+		}
+		a:hover, a:active
+		{
+			color: $white;
+		}
+		p
+		{
+			@include rem(font-size, 1.5rem);
+		}
+		p:first-of-type 
+		{
+			text-align: center;
+			@include rem(padding, 1rem 0 1rem);
+			color: $primary;
+		}	
+		p:last-of-type
+		{
+			text-align: center;
+			@include rem(padding, 0 3rem 2rem);
+		}
+	}
+	img
+	{
+		display: block; 
+		width: 100%;
+		@include rem(max-width, 54rem);
+		padding: 1rem 1rem 0;
+		margin: 0 auto;
+	}
+	h2
+	{
+		color: $primary;
+		@include rem(padding, 1rem 0 0 0.5rem);
+		@include rem(font-size, 5rem);
+		text-transform: capitalize;
+		font-weight: 200;
+	}
+	article:last-of-type
+	{
+		@include rem(margin-bottom, 6rem);
+	}
+}
+
+.process-grid
+{
+	max-width: 1010px;
+	margin: 0 auto;
+}

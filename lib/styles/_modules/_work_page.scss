@@ -1,0 +1,54 @@
+/*
+**
+*** Projects
+**
+*/
+
+
+.work_page
+{	
+	background-color: $white;
+	@include rem(padding-bottom, 4rem);
+	h1
+	{
+		color: $primary;
+		text-transform: capitalize; 
+		font-weight: 300;
+
+		@include rem(margin, 3rem 0 0);
+		@include rem(font-size, 5rem);
+	}
+	img
+	{
+		width: 100%;
+	}
+	@include respond-to(large-lap)
+	{
+		.column
+		{
+			padding-right: 12rem;
+			padding-left: 12rem;
+		}
+	}
+	@include respond-to(desk)
+	{
+		.column
+		{
+			padding-right: 22rem;
+			padding-left: 22rem;
+		}
+	}
+}
+
+
+.work .no-margin-left
+{
+	margin-left: 0;
+}
+
+
+/******************
+
+	Media Query
+	
+******************/
