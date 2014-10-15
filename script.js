@@ -13,6 +13,11 @@
 					templateUrl : 'pages/home.html',
 					controller : 'mainController'
 				})
+				// route for the home page
+				.when('#home', {
+					templateUrl : 'pages/home.html',
+					controller : 'mainController'
+				})
 
 				// route for the work page
 				.when('/work', {
@@ -37,7 +42,6 @@
 					templateUrl : 'pages/contact.html',
 					controller : 'mainController'
 				});
-				$locationProvider.html5Mode(true);
 		});
 
 		variable.controller('mainController', function($scope) {
