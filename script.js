@@ -1,10 +1,47 @@
 
 
+	// create the module and name it variable
+		// also include ngRoute for all our routing needs
+	var variable = angular.module('variable', ['ngRoute']);
 
-	var variable = angular.module('variable', []);
+		variable.config(function($routeProvider) 
+		{
+			$routeProvider
 
-		variable.controller('mainController', 
-	function($scope) {
+				// route for the home page
+				.when('/', {
+					templateUrl : 'pages/home.html',
+					controller : 'mainController'
+				})
 
-		$scope.message = 'Were on the page';
+				// route for the work page
+				.when('/work', {
+					templateUrl : 'pages/work.html',
+					controller : 'mainController'
+				})
+
+				// route for the blog page
+				.when('/blog', {
+					templateUrl : 'pages/blog.html',
+					controller : 'mainController'
+				})
+
+				// route for the process page
+				.when('/process', {
+					templateUrl : 'pages/process.html',
+					controller : 'mainController'
+				})
+
+				// route for the contact page
+				.when('/contact', {
+					templateUrl : 'pages/contact.html',
+					controller : 'mainController'
+				});
+
+		});
+
+		variable.controller('mainController', function($scope) {
+
 	});
+
+	
