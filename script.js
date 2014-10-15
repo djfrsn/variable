@@ -37,7 +37,7 @@
 					templateUrl : 'pages/contact.html',
 					controller : 'mainController'
 				});
-
+				$locationProvider.html5Mode(true);
 		});
 
 		variable.controller('mainController', function($scope) {
