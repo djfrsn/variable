@@ -29,28 +29,47 @@
 
     <div class='container'>
 
-    <header class='header row'>
+    
+
+    <header class='header row'> <! --=============- Begin Header --=============-- > 
+
         <div id='header_logo_wrap' class='large-6 column'>
+            <a class='home_logo_link' href="/">
+                <div class='header_logo'></div>
+            </a>
+            <a class='dropdown_menu_selector'>Menu<span class='dropdown_menu_icon'></span></a>
         </div>
+
         <nav id='header_navigation_menu' class='medium-6 large-6 column header_navigation'>
-        <ul id='show' class='menu '>
-                    <li><a class='home_page_link active' href='#'>Home</a>
-                    </li>
-                    <li><a class='work_link' href='#work'>Work</a>
-                    </li>
-                    <li><a class='blog_link' href='#blog'>Blog</a>
-                    </li>
-                    <li><a class='process_link' href='#process'>Process</a>
-                    </li>
-                    <li><a class='contact_link' href='#contact'>Contact</a>
-                    </li>
-        </ul>
+            <ul id='show' class='menu '>
+                <li><a class='home_page_link active' href='#'>Home</a>
+                </li>
+                <li><a class='work_link' href='#work'>Work</a>
+                </li>
+                <li><a class='blog_link' href='#blog'>Blog</a>
+                </li>
+                <li><a class='process_link' href='#process'>Process</a>
+                </li>
+                <li><a class='contact_link' href='#contact'>Contact</a>
+                </li>
+            </ul>
         </nav>
-    </header>
 
-    <div id="main">{{ message }}</div>
+    </header> <! --=============- End Header --=============-- > 
 
-    <footer class='footer row'></footer>
+    <div id="main">{{ message }}</div> <! --=============- Main --=============-- > 
+
+    <footer class='footer row'> <! --=============- Begin Footer --=============-- > 
+        <div class='large-12 column'>
+            <span class="footer_social_icons">
+               <a href="#"><i class='fa fa-3x fa-twitter'></i></a>
+               <a href="#"><i class='fa fa-3x fa-instagram'></i></a>
+               <a href="#"><i class='fa fa-3x fa-facebook'></i></a>
+               <a href="#"><i class='fa fa-3x fa-tumblr'></i></a>
+            </span>
+            <p>∆ 2014 <span class='color-secondary'>| Website developed by  </span><a href="http://dennisjefferson.com">Dennis Jefferson</a> <span class='color-secondary'>| Design by</span> Dzyngirl: Online Design Magazine</p>
+        </div>
+    </footer> <! --=============- End Footer --=============-- > 
 
 </div>
 
