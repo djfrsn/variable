@@ -4,7 +4,7 @@
 		// also include ngRoute for all our routing needs
 	var variable = angular.module('variable', ['ngRoute']);
 
-		variable.config(function($routeProvider, $locationProvider) 
+		variable.config(function($routeProvider) 
 		{
 			$routeProvider
 
@@ -43,8 +43,6 @@
 					controller : 'mainController'
 				});
 
-				// use the HTML5 History API
-				$locationProvider.html5Mode(true);
 		});
 
 		variable.controller('mainController', function($scope) {
