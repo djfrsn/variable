@@ -201,6 +201,18 @@ img, video, object { max-width: 100%; }
 */
 .container { color: #707070; }
 
+.fade { opacity: 1; }
+
+.fade.ng-enter, .fade.ng-leave { -webkit-transition: all 1s cubic-bezier(0, 0, 1, 1); -moz-transition: all 1s cubic-bezier(0, 0, 1, 1); -o-transition: all 1s cubic-bezier(0, 0, 1, 1); transition: all 1s cubic-bezier(0, 0, 1, 1); }
+
+.fade.ng-enter { opacity: 0; }
+
+.fade.ng-enter-active { opacity: 1; }
+
+.fade.ng-leave { opacity: 1; }
+
+.fade.ng-leave-active { opacity: 0; }
+
 /* Header
 */
 .header { background-color: #f25c27; }
@@ -510,5 +522,3 @@ section.download_studio.row { margin: 0; padding: 0; max-width: 100%; width: 100
 @media (min-width: 64em) { .footer_social_icons { /* 3 */ /* 3 */ /* 4 */ /* 5 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 0 40px; /* 9 */ padding: 0 4rem; /* 9 */ } }
 /* 1280px */
 @media (min-width: 80em) { .footer_social_icons { padding: 0 20% 0 0; } }
-
-/*# sourceMappingURL=paint.css.map */

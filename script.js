@@ -2,8 +2,10 @@
 
 	// create the module and name it variable
 		// also include ngRoute for all our routing needs
-	var variable = angular.module('variable', ['ngRoute']);
+	var variable = angular.module('variable', ['ngRoute', 'ngAnimate']);
 
+
+		// Route main navigation links
 		variable.config(function($routeProvider) 
 		{
 			$routeProvider
@@ -45,8 +47,9 @@
 
 		});
 
+		// Main controller
 		variable.controller('mainController', function($scope) {
-
-	});
+				
+		});
 
 	
