@@ -1,8 +1,6 @@
 <!doctype html>
 <html ng-app='variable'>
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <META http-equiv="refresh" content="URL=http://dennisjefferson.com/giarc">
@@ -19,8 +17,8 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.min.js"></script>
-    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.min.js"></script>
+    <script src="app.js"></script>
 </head>
 
 <body ng-controller='mainController'>
@@ -29,69 +27,24 @@
 
     <div class='container'>
 
-    
+    <header class='header row' ng-include src='header.url'></header> <! --=============- Header -=============-- > 
 
-    <header class='header row'> <! --=============- Begin Header --=============-- > 
-
-        <div id='header_logo_wrap' class='large-6 column'>
-            <a class='home_logo_link' href="#">
-                <div class='header_logo'></div>
-            </a>
-            <a class='dropdown_menu_selector'>Menu<span class='dropdown_menu_icon'></span></a>
-        </div>
-
-        <nav id='header_navigation_menu' class='medium-6 large-6 column header_navigation'>
-            <ul id='show' class='menu '>
-                <li><a activate-on-route="/" class='home_page_link' href='#'>Home</a>
-                </li>
-                <li><a activate-on-route="/work" class='work_link' href='#work'>Work</a>
-                </li>
-                <li><a activate-on-route="/blog" class='blog_link' href='#blog'>Blog</a>
-                </li>
-                <li><a activate-on-route="/process" class='process_link' href='#process'>Process</a>
-                </li>
-                <li><a activate-on-route="/contact" class='contact_link' href='#contact'>Contact</a>
-                </li> 
-            </ul>
-        </nav>
-
-    </header> <! --=============- End Header --=============-- > 
-
-
-    <section id="main">
-        
+    <section id="main">    
         <route-loading-indicator></route-loading-indicator>
-        <div ng-if='!isRouteLoading' class='animate-if' ng-view >
-        </div>
+        <div ng-if='!isRouteLoading' class='animate-if' ng-view></div> <! --=============- View -=============-- > 
+    </section> 
 
-
-    </section> <! --=============- Main --=============-- > 
-
-
-    <footer class='footer row'> <! --=============- Begin Footer --=============-- > 
-        <div class='large-12 column'>
-            <span class="footer_social_icons">
-               <a href="#"><i class='fa fa-3x fa-twitter'></i></a>
-               <a href="#"><i class='fa fa-3x fa-instagram'></i></a>
-               <a href="#"><i class='fa fa-3x fa-facebook'></i></a>
-               <a href="#"><i class='fa fa-3x fa-tumblr'></i></a>
-            </span>
-            <p>∆ 2014 <span class='color-secondary'>| Website developed by  </span><a href="http://dennisjefferson.com">Dennis Jefferson</a> <span class='color-secondary'>| Design by</span> Dzyngirl: Online Design Magazine</p>
-        </div>
-    </footer> <! --=============- End Footer --=============-- > 
+    <footer class='footer row' ng-include src='footer.url'></footer> <! --=============- Footer -=============-- > 
 
 </div>
 
     <!-- Built with love using Studi˚ -->
 
-    
  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
  <script src="lib/js/vendor/responsiveslide.min.js"></script>
  <script src='lib/js/brush/brush.js' ></script>
  <script src='lib/js/route-loading-indicator.js' ></script>
  <script src='lib/js/activeRoute.js' ></script>
-
 </body>
-
 </html>
