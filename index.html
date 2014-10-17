@@ -60,7 +60,9 @@
 
     <section id="main">
 
-        <div class='fade' ng-view ></div>
+        <div ng-if='!isRouteLoading' class='animate-if' ng-view >
+            <route-loading-indicator></route-loading-indicator>
+        </div>
 
     </section> <! --=============- Main --=============-- > 
 
@@ -85,7 +87,9 @@
  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
  <script src="lib/js/vendor/responsiveslide.min.js"></script>
-<script src='lib/js/brush/brush.js' ></script>
+ <script src='lib/js/brush/brush.js' ></script>
+ <script src='lib/js/angular-route.min.js' ></script>
+ <script src='lib/js/route-loading-indicator.js' ></script>
 
 </body>
 
