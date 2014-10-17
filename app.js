@@ -4,13 +4,6 @@
 		// also include ngRoute for all our routing needs
 	var variable = angular.module('variable', ['ngRoute', 'ngAnimate']);
 
-	function HeaderCtrl($scope) {
-		$scope.header = { name: 'header.html', url: 'lib/partials/header.html' };
-	}
-
-	function FooterCtrl($scope) {
-		$scope.header = { name: 'footer.html', url: 'lib/partials/footer.html' };
-	}
 		// Route main navigation links
 		variable.config(function($routeProvider) 
 		{
@@ -55,7 +48,8 @@
 		
 		// Main controller
 		variable.controller('mainController', function($scope) {
-
+			$scope.header = { name: 'header.html', url: 'lib/partials/header.html' };
+			$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
 		});
 
 	
