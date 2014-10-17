@@ -42,15 +42,15 @@
 
         <nav id='header_navigation_menu' class='medium-6 large-6 column header_navigation'>
             <ul id='show' class='menu '>
-                <li><a class='home_page_link active' href='#'>Home</a>
+                <li><a activate-on-route="/" class='home_page_link' href='#'>Home</a>
                 </li>
-                <li><a class='work_link' href='#work'>Work</a>
+                <li><a activate-on-route="/work" class='work_link' href='#work'>Work</a>
                 </li>
-                <li><a class='blog_link' href='#blog'>Blog</a>
+                <li><a activate-on-route="/blog" class='blog_link' href='#blog'>Blog</a>
                 </li>
-                <li><a class='process_link' href='#process'>Process</a>
+                <li><a activate-on-route="/process" class='process_link' href='#process'>Process</a>
                 </li>
-                <li><a class='contact_link' href='#contact'>Contact</a>
+                <li><a activate-on-route="/contact" class='contact_link' href='#contact'>Contact</a>
                 </li> 
             </ul>
         </nav>
@@ -90,6 +90,7 @@
  <script src='lib/js/brush/brush.js' ></script>
  <script src='lib/js/angular-route.min.js' ></script>
  <script src='lib/js/route-loading-indicator.js' ></script>
+ <script src='lib/js/activeRoute.js' ></script>
 
 </body>
 
