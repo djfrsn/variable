@@ -26,13 +26,12 @@
     -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  height:120px;
+  @include rem(height,120px);
   width:100%;
   color: $white;
-  margin-top:100px;
-  @include rem(font-size, 1.4rem);
+  @include rem(margin-top,100px);
+  @include rem(font-size, 1.5rem);
   text-align: center;
-  font-size: 1.3rem;
 }
 .loading
 {
