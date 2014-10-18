@@ -80,6 +80,7 @@
 	}
 	p
 	{
+		color: $primary;
 		@include rem(font-size, 1.5rem);
 		@include respond-to(small-lap-bridge)
 		{
@@ -103,7 +104,7 @@
 .intro_download_button
 {
 	background-color: $primary; 
-	color: $white;
+
 	text-transform: capitalize;
 
 	@include rem(margin, 2rem auto 4.5rem);
@@ -120,6 +121,7 @@
 	{
 		@include rem(line-height, 3rem);
 		@include rem(padding, 0 1.8rem);
+		color: $secondary;
 	}
 }
 

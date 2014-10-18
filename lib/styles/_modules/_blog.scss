@@ -1,7 +1,7 @@
 
 .blog
 {
-	background-color: $white;
+	background-color: $legible;
 	h1
 	{
 		color: $primary;
@@ -27,6 +27,14 @@
 		{
 		@include rem(max-width, 32.9rem);			
 		}
+	}
+	p
+	{
+		color: $primary;
+	}
+	i
+	{
+		color: $tertiary;
 	}
 }
 
@@ -105,7 +113,7 @@
 	}
 	p:nth-of-type(2n), p:last-of-type
 	{
-		color: $primary;
+		color: $white;
 	}
 }
 .float-right
@@ -121,7 +129,7 @@
 {
 	padding-top: 0.5rem;
 	background-color: $primary;
-	color: $white;
+	color: $primary;
 	font-style: italic;
 
 	@include rem(width, 11rem);
@@ -136,15 +144,14 @@
 
 .blog_post_short
 {
-	color: $primary;
-
+	color: $white;
 	@include rem(margin-top, 1rem);
 }
 
 .blog_button
 {
 	background-color: $primary;
-	color: $white;
+	color: $secondary;
 	font-style: italic;
 
 	@include rem(width, 9rem);

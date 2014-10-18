@@ -109,7 +109,7 @@
 	}
 	i
 	{
-		color: $white;
+		color: $tertiary;
 	}
 }
 .float-right
@@ -147,7 +147,7 @@
 .blog_page_button
 {
 	background-color: $primary;
-	color: $white;
+	color: $secondary;
 	font-style: italic;
 
 	@include rem(width, 9rem);

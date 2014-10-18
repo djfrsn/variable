@@ -39,7 +39,6 @@ body {
     color: #222;
     font-weight: normal;
     font-style: normal;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     line-height: 150%;
     cursor: default;
 }
@@ -1230,7 +1229,6 @@ button,
     text-decoration: none;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     line-height: normal;
     cursor: pointer;
     transition: background-color 300ms ease-out;
@@ -1398,7 +1396,6 @@ meta.foundation-mq-topbar {
     text-transform: none;
     font-weight: normal;
     font-size: 0.8125rem;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 .top-bar-section ul li>a.button {
     padding-right: 15px;
@@ -2608,7 +2605,6 @@ button.dropdown.secondary:after { border-color: #333 transparent transparent tra
     text-align: center;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 .pricing-table .price {
     padding: 2rem 1.25rem;
@@ -2617,7 +2613,6 @@ button.dropdown.secondary:after { border-color: #333 transparent transparent tra
     text-align: center;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 .pricing-table .description {
     padding: 2rem;
@@ -3123,7 +3118,6 @@ h6 {
     color: #222;
     font-weight: normal;
     font-style: normal;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     line-height: 1.4;
 
     text-rendering: optimizeLegibility;
@@ -3342,7 +3336,6 @@ blockquote p {
     background-color: #efefef;
     color: #222;
     font-size: 1rem;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 .tabs dd>a:hover,
 .tabs .tab-title>a:hover { background-color: #e1e1e1 }
@@ -3476,7 +3469,6 @@ ul.pagination li {
     padding: 0.875rem 0;
     list-style-position: outside;
     list-style-type: none;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 .side-nav li {
     margin: 0 0 0.4375rem 0;
@@ -3496,7 +3488,6 @@ ul.pagination li {
 .side-nav li.active>a:first-child:not(.button) {
     color: #1cc7ff;
     font-weight: normal;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 .side-nav li.divider {
     padding: 0;
@@ -3532,7 +3523,6 @@ ul.pagination li {
     background: #efefef;
     color: #222;
     font-size: 1rem;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 .accordion .accordion-navigation>a:hover,
 .accordion dd>a:hover { background: #e3e3e3 }
@@ -4084,7 +4074,6 @@ dialog::backdrop {
     color: #999;
     font-weight: normal;
     font-size: 0.875rem;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
 }
 .sub-nav dt a,
 .sub-nav dd a,
@@ -4271,7 +4260,6 @@ dialog::backdrop {
     white-space: nowrap;
     font-weight: normal;
     font-size: 0.6875rem;
-    font-family: "Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
     line-height: 1;
 }
 .label.radius { border-radius: 3px }

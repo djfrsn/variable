@@ -3,7 +3,7 @@
 
 .container
 {
-    color: $legible;
+    color: $primary;
 }
 
 .animate-if.ng-enter {
@@ -28,7 +28,7 @@
   transform-style: preserve-3d;
   @include rem(height,120px);
   width:100%;
-  color: $white;
+  color: $secondary;
   @include rem(margin-top,100px);
   text-align: center;
 }

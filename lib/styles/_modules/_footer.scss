@@ -1,6 +1,6 @@
 .footer
 {
-	background-color: $white;
+	background-color: $tertiary;
 	color: $primary;
 
 	@include rem(padding, 3rem 1rem);
@@ -10,7 +10,7 @@
 	}
 	i
 	{
-		color: $red;
+		color: $secondary;
 
 		@include rem(padding-right, 0.5rem);
 	}

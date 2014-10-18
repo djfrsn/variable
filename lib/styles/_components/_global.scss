@@ -3,15 +3,24 @@
 *** Global
 **
 */
+@font-face {
+    font-family: 'BLOKKNeue-Regular';
+    src: url('BLOKKNeue-Regular.eot');
+    src: url('BLOKKNeue-Regular.eot?#iefix') format('embedded-opentype'),
+         url('BLOKKNeue-Regular.woff') format('woff'),
+         url('BLOKKNeue-Regular.svg#BLOKKNeue-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
-$primary: #F25C27;
-$secondary: #211c19;
-$tertiary: #EEE;
-$legible: #707070;
+$primary: #F1F2DF;
+$secondary: #4B5B6E;
+$tertiary: #79BD9A;
+$legible: #343444;
 $red: #E85356;
 $white: #FFF;
 $black: black;
-$gray: #7f7f7f;
+$gray: #CCCCCC;
 body 
 {
 	background-color: $primary;
@@ -33,6 +42,10 @@ p
 		@include rem(line-height, 2rem);
 }
 
+.blokk
+{
+	font-family: 'BLOKKNeue-Regular', sans-serif; 
+}
 .color-secondary
 {
 	color: $secondary;

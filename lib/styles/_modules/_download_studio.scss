@@ -6,13 +6,11 @@
 
 .download_studio
 {
-	border-top: 2px dashed #ccc;
-	border-bottom: 2px dashed #ccc;
 	background-color: $tertiary;
 	text-align: center;
 	h2
 	{
-		color: $primary;
+		color: $secondary;
 
 		@include rem(margin, 1.5rem 0 0);
 		@include rem(line-height, 3.3rem);
@@ -33,7 +31,7 @@ h2.download_studio_mid_h2
 {
 	padding-top: 0.5rem;
 	background-color: $primary;
-	color: $white;
+	color: $secondary;
 	font-style: italic;
 
 	@include rem(width, 11rem);
