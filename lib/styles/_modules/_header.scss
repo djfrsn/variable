@@ -28,28 +28,14 @@
 
 /* Nav
 */
-/*
+
 #header_navigation_menu
 {
-    display: inline-block; 
-
-    @include rem(width, 11.3rem);
-    @include rem(margin, 0 0 0 1rem);
-    @include respond-to(small-lap)
-        {
-            margin: 0;
-
-            @include rem(width, 44.2rem);
-            @include rem(padding-top, 2.2rem);
-        }
-        @include respond-to(large-lap-bridge)
-        {
-            padding-right: 0;
-        }
+    @include rem(padding-top, 0.4rem);
 }
 
 
-
+/*
 .menu
 {
     color: $white;
