@@ -1,55 +1,64 @@
 
 
-	// create the module and name it variable
-		// also include ngRoute for all our routing needs
-	var variable = angular.module('variable', ['ngRoute', 'ngAnimate']);
+// create the module and name it variable
+	// also include ngRoute for all our routing needs
+var variable = angular.module('variable', ['ngRoute', 'ngAnimate']);
 
-		// Route main navigation links
-		variable.config(function($routeProvider) 
-		{
-			$routeProvider
+	// Route main navigation links
+	variable.config(function($routeProvider) 
+	{
+		$routeProvider
 
-				// route for the home page
-				.when('/', {
-					templateUrl : 'pages/home.html',
-					controller : 'mainController'
-				})
-				// route for the home page
-				.when('#home', {
-					templateUrl : 'pages/home.html',
-					controller : 'mainController'
-				})
+			// route for the home page
+			.when('/', {
+				templateUrl : 'pages/home.html',
+				controller : 'mainController'
+			})
+			// route for the home page
+			.when('#home', {
+				templateUrl : 'pages/home.html',
+				controller : 'mainController'
+			})
 
-				// route for the work page
-				.when('/work', {
-					templateUrl : 'pages/work.html',
-					controller : 'mainController'
-				})
+			// route for the work page
+			.when('/work', {
+				templateUrl : 'pages/work.html',
+				controller : 'mainController'
+			})
 
-				// route for the blog page
-				.when('/blog', {
-					templateUrl : 'pages/blog.html',
-					controller : 'mainController'
-				})
+			// route for the blog page
+			.when('/blog', {
+				templateUrl : 'pages/blog.html',
+				controller : 'mainController'
+			})
 
-				// route for the process page
-				.when('/process', {
-					templateUrl : 'pages/process.html',
-					controller : 'mainController'
-				})
+			// route for the process page
+			.when('/process', {
+				templateUrl : 'pages/process.html',
+				controller : 'mainController'
+			})
 
-				// route for the contact page
-				.when('/contact', {
-					templateUrl : 'pages/contact.html',
-					controller : 'mainController'
-				});
+			// route for the contact page
+			.when('/contact', {
+				templateUrl : 'pages/contact.html',
+				controller : 'mainController'
+			});
 
-		});
-		
-		// Main controller
-		variable.controller('mainController', function($scope) {
-			$scope.header = { name: 'header.html', url: 'lib/partials/header.html' };
-			$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
-		});
+	});
+	
+// Main controller
+variable.controller('mainController', function($scope) {
+	$scope.header = { name: 'header.html', url: 'lib/partials/header.html' };
+	$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
+	 $('ul.slimmenu').slimmenu(
+	{
+	    resizeWidth: '800',
+	    collapserTitle: 'Main Menu',
+	    animSpeed: 'medium',
+	    easingEffect: null,
+	    indentChildren: false,
+	    childrenIndenter: '&nbsp;'
+	});
+});
 
 	

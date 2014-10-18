@@ -52,16 +52,8 @@
 
 .menu
 {
-    position: absolute;
-    top: 110%;
-    z-index: 100; 
-    float: right;
-    height: 100%;
     color: $white;
     text-transform: uppercase;
-
-    @include rem(right, 2rem);
-    @include rem(width, 113px);
         @include respond-to(small-lap)
         {
             position: static;
