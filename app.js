@@ -53,7 +53,7 @@ variable.controller('mainController', function($scope) {
 	 $('ul.slimmenu').slimmenu(
 	{
 	    resizeWidth: '800',
-	    collapserTitle: 'Main Menu',
+	    collapserTitle: '',
 	    animSpeed: 'medium',
 	    easingEffect: null,
 	    indentChildren: false,
