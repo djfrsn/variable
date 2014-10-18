@@ -218,11 +218,7 @@ img, video, object { max-width: 100%; }
 
 .header.row { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 1170px; /* 9 */ max-width: 117rem; /* 9 */ }
 
-.header_logo { display: inline-block; background-image: url("../imgs/logo_small.png"); /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ /* 4 */ /* 5 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin: 5px 0 0 5px; /* 9 */ margin: 0.5rem 0 0 0.5rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 190px; /* 9 */ width: 19rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ height: 38px; /* 9 */ height: 3.8rem; /* 9 */ /* 360px */ /* 768px */ }
-@media (min-width: 22.5em) { .header_logo { background-image: url("../imgs/logo.png"); /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ height: 65px; /* 9 */ height: 6.5rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 322px; /* 9 */ width: 32.2rem; /* 9 */ } }
-@media (min-width: 48em) { .header_logo { float: left; } }
-.header_logo .column { /* 768px */ }
-@media (min-width: 48em) { .header_logo .column { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 1170px; /* 9 */ max-width: 117rem; /* 9 */ } }
+.header_title { font-size: 5rem; text-transform: capitalize; font-weight: 600; margin-top: 0; }
 
 /* Nav
 */

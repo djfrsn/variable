@@ -14,34 +14,13 @@
     @include rem(max-width, 117rem);
 }
 
-.header_logo
+.header_title
 {
-    display: inline-block;
-    background-image: url('../imgs/logo_small.png');
-
-    @include rem(margin, 5px 0 0 5px);
-    @include rem(width, 190px); // 322px orig
-    @include rem(height, 38px);
-        @include respond-to(palm)
-        {
-            background-image: url('../imgs/logo.png');
-
-            @include rem(height, 65px);
-            @include rem(width, 322px);
-        }
-        @include respond-to(small-lap)
-        {
-            float: left;
-        }
-        .column
-        {
-                @include respond-to(small-lap)
-    {
-        @include rem(max-width, 1170px);
-    }
-        }
+    font-size: 5rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 0;
 }
-
 
 /* Nav
 */
