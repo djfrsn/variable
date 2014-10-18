@@ -216,7 +216,7 @@ img, video, object { max-width: 100%; }
 @media (min-width: 48em) { .menu li { display: inline-block; padding: 0; } }
 .menu li:nth-child(n+2) { /* 768px */ }
 @media (min-width: 48em) { .menu li:nth-child(n+2) { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-left: -3px; /* 9 */ margin-left: -0.3rem; /* 9 */ } }
-.menu li a { /* 768px */ }
+.menu li a { transition: background-color 0.5s ease-out; -o-transition: background-color 0.5s ease-out; -moz-transition: background-color 0.5s ease-out; -webkit-transition: background-color 0.5s ease-out; /* 768px */ }
 @media (min-width: 48em) { .menu li a { display: block; line-height: 51.5px; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ height: 48px; /* 9 */ height: 4.8rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 74px; /* 9 */ width: 7.4rem; /* 9 */ } }
 .menu li:nth-child(n+4) a { /* 768px */ }
 @media (min-width: 48em) { .menu li:nth-child(n+4) a { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 100px; /* 9 */ width: 10rem; /* 9 */ } }
