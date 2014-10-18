@@ -30,7 +30,6 @@
   width:100%;
   color: $white;
   @include rem(margin-top,100px);
-  @include rem(font-size, 1.5rem);
   text-align: center;
 }
 .loading
@@ -38,4 +37,5 @@
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  }
+  @include rem(font-size, 2rem);
+}
