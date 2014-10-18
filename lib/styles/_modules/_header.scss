@@ -29,17 +29,36 @@
 /* Nav
 */
 
+/** Edit only mobile styles in order to keep small-lap + nav default **/
+
 #header_navigation_menu
 {
     @include rem(padding-top, 0.4rem);
+    display: inline-block; 
+
+    @include rem(width, 11.3rem);
+    @include rem(margin, 0 0 0 1rem);
+    @include respond-to(small-lap)
+        {
+            margin: 0;
+
+            @include rem(width, 47.2rem);
+            @include rem(padding-top, 2.2rem);
+        }
+        @include respond-to(large-lap-bridge)
+        {
+            padding-right: 0;
+        }
 }
 
-
-/*
 .menu
 {
+    z-index: 100; 
+    float: right;
+    height: 100%;
     color: $white;
     text-transform: uppercase;
+
         @include respond-to(small-lap)
         {
             position: static;
@@ -48,7 +67,8 @@
             @include rem(width, 42.2rem);
         }
     li 
-    {    
+    {
+        background-color: $secondary;       
         list-style: none;   
         text-align: center; 
 
@@ -108,4 +128,3 @@
                 display: inline-block;
             }
         }
-*/
