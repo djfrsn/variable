@@ -20,13 +20,7 @@
 	img
 	{
 		width: 100%;
-
 		@include rem(margin-top, 2rem);
-		@include rem(max-width, 56rem);
-		@include respond-to(large-palm-bridge)
-		{
-		@include rem(max-width, 32.9rem);			
-		}
 	}
 	p
 	{
@@ -43,14 +37,11 @@
 	@include respond-to(large-palm-bridge)
 	{
 		margin: 0 auto;
-
-		@include rem(width, 55.6rem);
+		width: 100%;
+		max-width: 84rem;
 	}
 	@include respond-to(large-lap-bridge)
 	{
-		width: 100%;
-
-		@include rem(max-width, 113.2rem)
 	}
 }
 @include respond-to(large-lap-bridge)
@@ -85,12 +76,6 @@
 
 .blog_widget
 {
-	@include respond-to(large-palm-bridge)
-	{
-		float: left;
-
-		@include rem(max-width, 26.8rem);
-	}
 	h1
 	{
 		@include rem(margin-top, 1rem);
