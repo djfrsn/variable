@@ -216,7 +216,7 @@ img, video, object { max-width: 100%; }
 @media (min-width: 72.75em) { #header_navigation_menu { padding-right: 0; } }
 
 .menu { z-index: 100; float: right; height: 100%; color: #79bd9a; text-transform: uppercase; /* 768px */ }
-@media (min-width: 48em) { .menu { position: static; margin-bottom: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 422px; /* 9 */ width: 42.2rem; /* 9 */ } }
+@media (min-width: 48em) { .menu { position: static; margin-bottom: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 540px; /* 9 */ width: 54rem; /* 9 */ } }
 .menu li { background-color: #4b5b6e; list-style: none; text-align: center; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 10px; /* 9 */ padding: 1rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 15px; /* 9 */ font-size: 1.5rem; /* 9 */ /* 768px */ }
 @media (min-width: 48em) { .menu li { display: inline-block; padding: 0; } }
 .menu li:nth-child(n+2) { /* 768px */ }
