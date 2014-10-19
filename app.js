@@ -52,7 +52,7 @@ variable.controller('mainController', function($scope) {
 	$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
 	 $('ul.slimmenu').slimmenu(
 	{
-	    resizeWidth: '800',
+	    resizeWidth: '768',
 	    collapserTitle: '',
 	    animSpeed: 'medium',
 	    easingEffect: null,

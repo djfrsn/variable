@@ -203,14 +203,15 @@ img, video, object { max-width: 100%; }
 
 .header.row { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 1170px; /* 9 */ max-width: 117rem; /* 9 */ }
 
-.header_title { font-size: 4rem; text-transform: capitalize; font-weight: 600; margin-top: 0; /* 768px */ }
-@media (min-width: 48em) { .header_title { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 50px; /* 9 */ font-size: 5rem; /* 9 */ } }
+.header_title { font-size: 3.8rem; text-transform: capitalize; font-weight: 600; margin-top: 0; /* 768px */ /* 1024px */ }
+@media (min-width: 48em) { .header_title { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 42px; /* 9 */ font-size: 4.2rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 260px; /* 9 */ width: 26rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-top: 4px; /* 9 */ padding-top: 0.4rem; /* 9 */ } }
+@media (min-width: 64em) { .header_title { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 50px; /* 9 */ font-size: 5rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 360px; /* 9 */ width: 36rem; /* 9 */ padding-top: 0; } }
 
 /* Nav
 */
 /** Edit only mobile styles in order to keep small-lap + nav default **/
 #header_navigation_menu { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-top: 4px; /* 9 */ padding-top: 0.4rem; /* 9 */ display: inline-block; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 113px; /* 9 */ width: 11.3rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 5 */ /* 4 */ /* 5 */ /* 4 */ /* 5 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin: 0 0 0 10px; /* 9 */ margin: 0 0 0 1rem; /* 9 */ /* 768px */ /* 1164px */ }
-@media (min-width: 48em) { #header_navigation_menu { margin: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 520px; /* 9 */ width: 52rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-top: 22px; /* 9 */ padding-top: 2.2rem; /* 9 */ } }
+@media (min-width: 48em) { #header_navigation_menu { margin: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 540px; /* 9 */ width: 54rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-top: 22px; /* 9 */ padding-top: 2.2rem; /* 9 */ } }
 @media (min-width: 72.75em) { #header_navigation_menu { padding-right: 0; } }
 
 .menu { z-index: 100; float: right; height: 100%; color: #79bd9a; text-transform: uppercase; /* 768px */ }

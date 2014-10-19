@@ -16,13 +16,22 @@
 
 .header_title
 {
-    font-size: 4rem;
+    font-size: 3.8rem;
     text-transform: capitalize;
     font-weight: 600;
     margin-top: 0;
     @include respond-to(small-lap)
     {
-        @include rem(font-size, 5rem);        
+        @include rem(font-size, 4.2rem);  
+        @include rem(width, 26rem);     
+        @include rem(padding-top, 0.4rem); 
+    }
+    @include respond-to(large-lap)
+    {
+        @include rem(font-size, 5rem);   
+        @include rem(width, 36rem);  
+        padding-top: 0; 
+        
     }
 }
 
@@ -41,8 +50,7 @@
     @include respond-to(small-lap)
         {
             margin: 0;
-
-            @include rem(width, 52rem);
+            @include rem(width, 54rem);
             @include rem(padding-top, 2.2rem);
         }
         @include respond-to(large-lap-bridge)
