@@ -12,12 +12,12 @@ var variable = angular.module('variable', ['ngRoute', 'ngAnimate', 'ngDropdowns'
 			// route for the home page
 			.when('/', {
 				templateUrl : 'pages/home.html',
-				controller : 'homeController'
+				controller : 'mainController'
 			})
 			// route for the home page
 			.when('#home', {
 				templateUrl : 'pages/home.html',
-				controller : 'homeController'
+				controller : 'mainController'
 			})
 
 			// route for the work page
@@ -43,20 +43,14 @@ var variable = angular.module('variable', ['ngRoute', 'ngAnimate', 'ngDropdowns'
 				templateUrl : 'pages/contact.html',
 				controller : 'mainController'
 			});
-
 	});
 	
-// Home controller
-variable.controller('homeController', function($scope) {
-	$scope.header = { name: 'header.html', url: 'lib/partials/header.html' };
-	$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
-	$(".rslides").responsiveSlides(); 
-});
 // Main controller
 variable.controller('mainController', function($scope) {
 	$scope.header = { name: 'header.html', url: 'lib/partials/header.html' };
 	$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
-	 $scope.ddMenuOptions = [
+	$(".rslides").responsiveSlides(); 
+	$scope.ddMenuOptions = [
         {
             // Example of an option with the 'href' property
             text: 'Home',
