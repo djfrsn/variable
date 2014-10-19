@@ -344,6 +344,10 @@ img, video, object { max-width: 100%; }
 .blog_read_more { padding-top: 0.5rem; background-color: #f1f2df; color: #f1f2df; font-style: italic; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 110px; /* 9 */ width: 11rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ height: 30px; /* 9 */ height: 3rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin: 25px 0 20px; /* 9 */ margin: 2.5rem 0 2rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 15px; /* 9 */ font-size: 1.5rem; /* 9 */ }
 .blog_read_more p { text-align: center; }
 
+.blog_icons { font-size: 1.4em !important; }
+
+.blog_page_icons { font-size: 2.5em !important; }
+
 .blog_post_short { color: white; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-top: 10px; /* 9 */ margin-top: 1rem; /* 9 */ }
 
 .blog_button { background-color: #f1f2df; color: #4b5b6e; font-style: italic; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 90px; /* 9 */ width: 9rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ height: 30px; /* 9 */ height: 3rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin: 20px 0 40px; /* 9 */ margin: 2rem 0 4rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 15px; /* 9 */ font-size: 1.5rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 8px 5px 0 7px; /* 9 */ padding: 0.8rem 0.5rem 0 0.7rem; /* 9 */ }
