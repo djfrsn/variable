@@ -50,30 +50,12 @@ var variable = angular.module('variable', ['ngRoute', 'ngAnimate']);
 variable.controller('homeController', function($scope) {
 	$scope.header = { name: 'header.html', url: 'lib/partials/header.html' };
 	$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
-	 $('ul.slimmenu').slimmenu(
-	{
-	    resizeWidth: '768',
-	    collapserTitle: '',
-	    animSpeed: 'medium',
-	    easingEffect: null,
-	    indentChildren: false,
-	    childrenIndenter: '&nbsp;'
-	});
 	$(".rslides").responsiveSlides(); 
 });
 // Main controller
 variable.controller('mainController', function($scope) {
 	$scope.header = { name: 'header.html', url: 'lib/partials/header.html' };
 	$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
-	 $('ul.slimmenu').slimmenu(
-	{
-	    resizeWidth: '768',
-	    collapserTitle: '',
-	    animSpeed: 'medium',
-	    easingEffect: null,
-	    indentChildren: false,
-	    childrenIndenter: '&nbsp;'
-	});
 });
 
 	
