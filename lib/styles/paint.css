@@ -266,19 +266,18 @@ img, video, object { max-width: 100%; }
 */
 .work { background-color: #f1f2df; }
 .work h1 { color: #4b5b6e; text-transform: capitalize; font-weight: 300; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ /* 4 */ /* 5 */ margin: 30px 0 0; /* 9 */ margin: 3rem 0 0; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 50px; /* 9 */ font-size: 5rem; /* 9 */ }
-.work img { float: left; width: 100%; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-top: 30px; /* 9 */ margin-top: 3rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 440px; /* 9 */ max-width: 44rem; /* 9 */ /* 480 px */ /* 768px */ }
-@media (min-width: 30em) { .work img { float: left; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 206px; /* 9 */ max-width: 20.6rem; /* 9 */ } }
-@media (min-width: 48em) { .work img { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-left: 20px; /* 9 */ margin-left: 2rem; /* 9 */ } }
-.work img:nth-of-type(2n) { /* 480 px */ }
-@media (min-width: 30em) and (max-width: 48em) { .work img:nth-of-type(2n) { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-left: 20px; /* 9 */ margin-left: 2rem; /* 9 */ } }
+.work img { float: left; width: 100%; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-top: 30px; /* 9 */ margin-top: 3rem; /* 9 */ /* 1024px */ }
+@media (min-width: 64em) { .work img { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-left: 20px; /* 9 */ margin-left: 2rem; /* 9 */ } }
+.work img:nth-of-type(2n) { /* 1024px */ }
+@media (min-width: 64em) { .work img:nth-of-type(2n) { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-left: 20px; /* 9 */ margin-left: 2rem; /* 9 */ } }
 .work img:last-of-type { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-bottom: 30px; /* 9 */ margin-bottom: 3rem; /* 9 */ /* 768px */ }
 @media (min-width: 48em) { .work img:last-of-type { margin-bottom: 7rem; } }
-.work img:nth-child(2), .work img:nth-child(5), .work img:nth-child(8) { /* 768px */ /* 768px */ }
+.work img:nth-child(2), .work img:nth-child(5), .work img:nth-child(8) { /* 768px */ /* 1024px */ }
 @media (min-width: 48em) { .work img:nth-child(2), .work img:nth-child(5), .work img:nth-child(8) { margin-left: 0; } }
-@media (min-width: 48em) { .work img:nth-child(2), .work img:nth-child(5), .work img:nth-child(8) { margin-left: 2rem; } }
+@media (min-width: 64em) { .work img:nth-child(2), .work img:nth-child(5), .work img:nth-child(8) { margin-left: 2rem; } }
 
-.work .no-margin-left { margin-left: 0; }
-
+/* 1024px */
+@media (min-width: 64em) { .crop { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-height: 230px; /* 9 */ max-height: 23rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 340px; /* 9 */ max-width: 34rem; /* 9 */ overflow: hidden; float: left; } }
 /******************
 
 	Media Query
@@ -287,10 +286,11 @@ img, video, object { max-width: 100%; }
 /* 480 px */
 @media (min-width: 30em) { .work_wrap { margin: 0 auto; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 440px; /* 9 */ width: 44rem; /* 9 */ } }
 /* 768px */
-@media (min-width: 48em) { .work_wrap { margin: 0 auto; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 680px; /* 9 */ width: 68rem; /* 9 */ }
-  .work_wrap h1 { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-left: 15px; /* 9 */ padding-left: 1.5rem; /* 9 */ } }
+@media (min-width: 48em) { .work_wrap { margin: 0 auto; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 680px; /* 9 */ width: 68rem; /* 9 */ } }
+/* 1024px */
+@media (min-width: 64em) { .work_wrap { margin: 0 auto; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 1040px; /* 9 */ width: 104rem; /* 9 */ } }
 /* 1280px */
-@media (min-width: 80em) { .work_wrap { width: 100%; margin: 0 auto; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 910px; /* 9 */ max-width: 91rem; /* 9 */ } }
+@media (min-width: 80em) { .work_wrap { width: 100%; margin: 0 auto; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 1040px; /* 9 */ max-width: 104rem; /* 9 */ } }
 /*
 **
 *** Projects

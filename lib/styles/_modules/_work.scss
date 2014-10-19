@@ -20,23 +20,15 @@
 	{
 		float: left;
 		width: 100%;
-
 		@include rem(margin-top, 3rem);
-		@include rem(max-width, 44rem);
-		@include respond-to(large-palm)
+		@include respond-to(large-lap)
 		{
-		float: left;
-
-		@include rem(max-width, 20.6rem);			
-		}
-		@include respond-to(small-lap)
-		{
-			@include rem(margin-left, 2rem);
+			@include rem(margin-left, 2rem);			
 		}
 	}
 	img:nth-of-type(2n)
 	{
-		@include respond-to(large-palm-max)
+		@include respond-to(large-lap)
 		{
 		@include rem(margin-left, 2rem);
 		}
@@ -55,21 +47,23 @@
 		{
 			margin-left: 0;
 		}
-		@include respond-to(small-lap)
+		@include respond-to(large-lap)
 		{
 			margin-left: 2rem;
 		}
 	}
 }
 
-
-
-.work .no-margin-left
+@include respond-to(large-lap)
 {
-	margin-left: 0;
+.crop
+{
+	@include rem(max-height, 23rem);
+	@include rem(max-width, 34rem);
+	overflow: hidden;
+	float: left; 
 }
-
-
+}
 /******************
 
 	Media Query
@@ -90,21 +84,15 @@
 	.work_wrap
 	{
 		margin: 0 auto;
-
 		@include rem(width, 68rem);
-		h1
-		{
-			@include rem(padding-left, 1.5rem);
-		}
 	}
 }
-@include respond-to(lap)
+@include respond-to(large-lap)
 {
 	.work_wrap
 	{
 		margin: 0 auto;
-
-		@include rem(width, 62rem);
+		@include rem(width, 104rem);
 	}
 }
 @include respond-to(desk)
@@ -115,6 +103,6 @@
 		
 		margin: 0 auto;
 
-		@include rem(max-width, 91rem);
+		@include rem(max-width, 104rem);
 	}
 }
