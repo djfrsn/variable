@@ -185,7 +185,7 @@ aside
 	@include rem(top, 0.3rem);
 	background-color: $primary;
 	display: inline-block;
-	color: $white;
+	color: $secondary;
 	font-style: italic;
 	@include rem(width, 7rem);
 	@include rem(height, 3.35rem);
