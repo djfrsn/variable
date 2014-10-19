@@ -51,28 +51,6 @@ variable.controller('homeController', function($scope) {
 	$scope.header = { name: 'header.html', url: 'lib/partials/header.html' };
 	$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
 	$(".rslides").responsiveSlides(); 
-	 $scope.ddMenuOptions = [
-        {
-            text: 'Option1',
-            iconCls: 'someicon'
-        },
-        {
-            text: 'Option2',
-            someprop: 'somevalue'
-        },
-        {
-            // Any option with divider set to true will be a divider
-            // in the menu and cannot be selected.
-            divider: true
-        },
-        {
-            // Example of an option with the 'href' property
-            text: 'Option4',
-            href: '#option4'
-        }
-    ];
-
-    $scope.ddMenuSelected = {};
 });
 // Main controller
 variable.controller('mainController', function($scope) {
@@ -80,22 +58,29 @@ variable.controller('mainController', function($scope) {
 	$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
 	 $scope.ddMenuOptions = [
         {
-            text: 'Option1',
-            iconCls: 'someicon'
-        },
-        {
-            text: 'Option2',
-            someprop: 'somevalue'
-        },
-        {
-            // Any option with divider set to true will be a divider
-            // in the menu and cannot be selected.
-            divider: true
+            // Example of an option with the 'href' property
+            text: 'Home',
+            href: '#'
         },
         {
             // Example of an option with the 'href' property
-            text: 'Option4',
-            href: '#option4'
+            text: 'Work',
+            href: '#work'
+        },
+        {
+            // Example of an option with the 'href' property
+            text: 'Services',
+            href: '#services'
+        },
+        {
+            // Example of an option with the 'href' property
+            text: 'Blog',
+            href: '#blog'
+        },
+        {
+            // Example of an option with the 'href' property
+            text: 'Contact',
+            href: '#contact'
         }
     ];
 
