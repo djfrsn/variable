@@ -239,6 +239,8 @@ img, video, object { max-width: 100%; }
 
 .rslides { position: relative; overflow: hidden; margin: 0 auto; padding: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 760px; /* 9 */ max-width: 76rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-height: 490px; /* 9 */ max-height: 49rem; /* 9 */ width: 100%; list-style: none; }
 
+.rslides .crop { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-height: 358px; /* 9 */ max-height: 35.8rem; /* 9 */ overflow: hidden; }
+
 .rslides li { position: absolute; top: 0; left: 0; display: none; width: 100%; -webkit-backface-visibility: hidden; }
 
 .rslides li:first-child { position: relative; display: block; float: left; }

@@ -22,6 +22,11 @@
   width: 100%;
   list-style: none;
   }
+ .rslides .crop
+ {
+ 	@include rem(max-height, 35.8rem);
+ 	overflow: hidden;
+ }
 
 .rslides li {
   position: absolute;
