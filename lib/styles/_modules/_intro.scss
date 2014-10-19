@@ -17,8 +17,8 @@
   overflow: hidden;
   margin: 0 auto;
   padding: 0;
-  max-width: 1170px; 
-  max-height: 490px;
+  @include rem(max-width, 76rem); 
+  @include rem(max-height, 49rem);
   width: 100%;
   list-style: none;
   }

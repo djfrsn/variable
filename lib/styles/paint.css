@@ -236,7 +236,7 @@ img, video, object { max-width: 100%; }
 */
 .intro { background-color: #4b5b6e; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-top: 40px; /* 9 */ padding-top: 4rem; /* 9 */ }
 
-.rslides { position: relative; overflow: hidden; margin: 0 auto; padding: 0; max-width: 1170px; max-height: 490px; width: 100%; list-style: none; }
+.rslides { position: relative; overflow: hidden; margin: 0 auto; padding: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 760px; /* 9 */ max-width: 76rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-height: 490px; /* 9 */ max-height: 49rem; /* 9 */ width: 100%; list-style: none; }
 
 .rslides li { position: absolute; top: 0; left: 0; display: none; width: 100%; -webkit-backface-visibility: hidden; }
 
