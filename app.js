@@ -12,12 +12,12 @@ var variable = angular.module('variable', ['ngRoute', 'ngAnimate']);
 			// route for the home page
 			.when('/', {
 				templateUrl : 'pages/home.html',
-				controller : 'mainController'
+				controller : 'homeController'
 			})
 			// route for the home page
 			.when('#home', {
 				templateUrl : 'pages/home.html',
-				controller : 'mainController'
+				controller : 'homeController'
 			})
 
 			// route for the work page
@@ -46,6 +46,21 @@ var variable = angular.module('variable', ['ngRoute', 'ngAnimate']);
 
 	});
 	
+// Home controller
+variable.controller('homeController', function($scope) {
+	$scope.header = { name: 'header.html', url: 'lib/partials/header.html' };
+	$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
+	 $('ul.slimmenu').slimmenu(
+	{
+	    resizeWidth: '768',
+	    collapserTitle: '',
+	    animSpeed: 'medium',
+	    easingEffect: null,
+	    indentChildren: false,
+	    childrenIndenter: '&nbsp;'
+	});
+	$(".rslides").responsiveSlides(); 
+});
 // Main controller
 variable.controller('mainController', function($scope) {
 	$scope.header = { name: 'header.html', url: 'lib/partials/header.html' };
