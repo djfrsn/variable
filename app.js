@@ -32,9 +32,9 @@ var variable = angular.module('variable', ['ngRoute', 'ngAnimate']);
 				controller : 'mainController'
 			})
 
-			// route for the process page
-			.when('/process', {
-				templateUrl : 'pages/process.html',
+			// route for the services page
+			.when('/services', {
+				templateUrl : 'pages/services.html',
 				controller : 'mainController'
 			})
 

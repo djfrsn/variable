@@ -210,7 +210,7 @@ img, video, object { max-width: 100%; }
 */
 /** Edit only mobile styles in order to keep small-lap + nav default **/
 #header_navigation_menu { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-top: 4px; /* 9 */ padding-top: 0.4rem; /* 9 */ display: inline-block; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 113px; /* 9 */ width: 11.3rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 5 */ /* 4 */ /* 5 */ /* 4 */ /* 5 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin: 0 0 0 10px; /* 9 */ margin: 0 0 0 1rem; /* 9 */ /* 768px */ /* 1164px */ }
-@media (min-width: 48em) { #header_navigation_menu { margin: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 472px; /* 9 */ width: 47.2rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-top: 22px; /* 9 */ padding-top: 2.2rem; /* 9 */ } }
+@media (min-width: 48em) { #header_navigation_menu { margin: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 520px; /* 9 */ width: 52rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-top: 22px; /* 9 */ padding-top: 2.2rem; /* 9 */ } }
 @media (min-width: 72.75em) { #header_navigation_menu { padding-right: 0; } }
 
 .menu { z-index: 100; float: right; height: 100%; color: #79bd9a; text-transform: uppercase; /* 768px */ }
@@ -220,7 +220,7 @@ img, video, object { max-width: 100%; }
 .menu li:nth-child(n+2) { /* 768px */ }
 @media (min-width: 48em) { .menu li:nth-child(n+2) { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-left: -3px; /* 9 */ margin-left: -0.3rem; /* 9 */ } }
 .menu li a { transition: background-color 0.5s ease-out; -o-transition: background-color 0.5s ease-out; -moz-transition: background-color 0.5s ease-out; -webkit-transition: background-color 0.5s ease-out; /* 768px */ }
-@media (min-width: 48em) { .menu li a { display: block; line-height: 51.5px; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ height: 48px; /* 9 */ height: 4.8rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 74px; /* 9 */ width: 7.4rem; /* 9 */ } }
+@media (min-width: 48em) { .menu li a { display: block; line-height: 51.5px; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ height: 48px; /* 9 */ height: 4.8rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 100px; /* 9 */ width: 10rem; /* 9 */ } }
 .menu li:nth-child(n+4) a { /* 768px */ }
 @media (min-width: 48em) { .menu li:nth-child(n+4) a { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 100px; /* 9 */ width: 10rem; /* 9 */ } }
 .menu li a:hover, .menu a:focus { background-color: #f1f2df; }
