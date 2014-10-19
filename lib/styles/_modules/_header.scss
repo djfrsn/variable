@@ -51,18 +51,18 @@
     @include rem(padding-top, 0.4rem);
     display: inline-block; 
 
-    @include rem(width, 11.3rem);
+    @include rem(width, 9rem);
     @include rem(margin, 0 0 0 1rem);
     @include respond-to(small-lap)
         {
             margin: 0;
-            @include rem(width, 54rem);
+            @include rem(width, 44rem);
             @include rem(padding-top, 2.2rem);
         }
-        @include respond-to(large-lap-bridge)
-        {
-            padding-right: 0;
-        }
+    @include respond-to(large-lap-bridge)
+    {
+        padding-right: 0;
+    }
 }
 
 .menu
@@ -77,8 +77,7 @@
         {
             position: static;
             margin-bottom: 0;
-
-            @include rem(width, 54rem);
+            @include rem(width, 44rem);
         }
     li 
     {
@@ -113,10 +112,17 @@
             line-height: 51.5px;
 
             @include rem(height, 4.8rem);
+            @include rem(width, 8rem);
+        }
+    }
+    li:nth-child(5) a
+    {
+        @include respond-to(small-lap)
+        {
             @include rem(width, 10rem);
         }
     }
-    li:nth-child(n+4) a
+    li:nth-child(3) a
     {
         @include respond-to(small-lap)
         {

@@ -29,6 +29,9 @@
 	@if $media == small-lap { /* 768px */
 		@media (min-width: 48em) { @content; }		
 	}
+	@if $media == small-lap-bridge { /* 768px */
+		@media (min-width: 48em) and (max-width: 50rem) { @content; }		
+	}
 	@if $media == large-lap { /* 1024px */
 		@media (min-width: 64em) { @content; }		
 	}
