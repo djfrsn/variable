@@ -56,13 +56,17 @@
 
 @include respond-to(large-lap)
 {
-.crop
-{
-	@include rem(max-height, 23rem);
-	@include rem(max-width, 34rem);
-	overflow: hidden;
-	float: left; 
-}
+	.crop
+	{
+		@include rem(max-height, 23rem);
+		@include rem(max-width, 34rem);
+		overflow: hidden;
+		float: left; 
+	}
+.work_wrap div:last-of-type
+	{
+		@include rem(margin-bottom, 7rem);
+	}
 }
 /******************
 
