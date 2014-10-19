@@ -208,6 +208,10 @@ img, video, object { max-width: 100%; }
 @media (min-width: 48em) { .header_title { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 42px; /* 9 */ font-size: 4.2rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 260px; /* 9 */ width: 26rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-top: 4px; /* 9 */ padding-top: 0.4rem; /* 9 */ } }
 @media (min-width: 64em) { .header_title { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 50px; /* 9 */ font-size: 5rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 360px; /* 9 */ width: 36rem; /* 9 */ padding-top: 0; } }
 
+/* Mobile Nav
+*/
+.mobileNav { color: #4b5b6e; }
+
 /* Nav
 */
 /** Edit only mobile styles in order to keep small-lap + nav default **/
