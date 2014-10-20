@@ -52,39 +52,40 @@ variable.controller('mainController', function($scope) {
 	var device = 'desktop';
         if(jQuery.browser.mobile === true){
             device = 'mobile';
+            $scope.ddMenuOptions = [
+	        {
+	            // Example of an option with the 'href' property
+	            text: 'Home',
+	            href: '#'
+	        },
+	        {
+	            // Example of an option with the 'href' property
+	            text: 'Work',
+	            href: '#work'
+	        },
+	        {
+	            // Example of an option with the 'href' property
+	            text: 'Services',
+	            href: '#services'
+	        },
+	        {
+	            // Example of an option with the 'href' property
+	            text: 'Blog',
+	            href: '#blog'
+	        },
+	        {
+	            // Example of an option with the 'href' property
+	            text: 'Contact',
+	            href: '#contact'
+	        }
+	    	];
+    		$scope.ddMenuSelected = {};
         }
+        
 	$scope.header = { name: 'header.html', url: 'lib/partials/' + device + '/header.html' };
 	$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
 	$(".rslides").responsiveSlides(); 
-	$scope.ddMenuOptions = [
-        {
-            // Example of an option with the 'href' property
-            text: 'Home',
-            href: '#'
-        },
-        {
-            // Example of an option with the 'href' property
-            text: 'Work',
-            href: '#work'
-        },
-        {
-            // Example of an option with the 'href' property
-            text: 'Services',
-            href: '#services'
-        },
-        {
-            // Example of an option with the 'href' property
-            text: 'Blog',
-            href: '#blog'
-        },
-        {
-            // Example of an option with the 'href' property
-            text: 'Contact',
-            href: '#contact'
-        }
-    ];
-
-    $scope.ddMenuSelected = {};
+	
 });
 
 	
