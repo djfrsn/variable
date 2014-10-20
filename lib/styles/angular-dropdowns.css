@@ -131,7 +131,7 @@
 .wrap-dd-menu .dropdown {
   /* Size & position */
   position: absolute;
-  z-index: 1;
+  z-index: 100;
   top: 70%;
   left: 0;
   right: 0;
