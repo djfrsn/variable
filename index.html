@@ -29,9 +29,10 @@
 
     <!-- Add your site or app content here -->
 
-    <div class='container'>
+<div class='container'>
 
     <header class='header row' ng-include src='header.url'></header> <! --=============- Header -=============-- > 
+
     <section id="main">    
         <route-loading-indicator></route-loading-indicator>
         <div ng-if='!isRouteLoading' class='animate-if' ng-view></div> <! --=============- View -=============-- > 
