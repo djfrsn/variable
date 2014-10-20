@@ -71,15 +71,15 @@ textarea {
   @include rem(font-size, 1.4rem);
   background-color: $secondary;
   border-radius: 3px;
-  color: $primary;
+  color: $tertiary;
   border: none;
-  border-bottom: 1px dashed #F25C27;
+  border-bottom: 1px dashed $primary;
 }
 button
 {
 	padding: 0.8rem 0.3rem 0.8rem 0;
-	background-color: #f25c27;
-	color: white;
+	background-color: $primary;
+	color: $legible;
 	font-style: italic;
 	width: 110px;
 	width: 7rem;
