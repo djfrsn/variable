@@ -123,16 +123,15 @@
 .wrap-dd-menu {
   /* Size and position */
   position: relative;
-  width: 42px;
-  float: right;
+  width: 200px;
+  margin: 0 auto;
   padding: 10px;
-  margin: 10px 30px 0 0;
 }
 
 .wrap-dd-menu .dropdown {
   /* Size & position */
   position: absolute;
-  z-index: 100;
+  z-index: 1;
   top: 70%;
   left: 0;
   right: 0;
