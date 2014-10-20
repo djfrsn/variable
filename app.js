@@ -2,7 +2,7 @@
 
 // create the module and name it variable
 	// also include ngRoute for all our routing needs
-var variable = angular.module('variable', ['ngRoute', 'ngAnimate', 'ngDropdowns']);
+var variable = angular.module('variable', ['ngRoute', 'ngAnimate', 'ngDropdowns', 'ngTouch']);
 
 	// Route main navigation links
 	variable.config(function($routeProvider) 
@@ -52,6 +52,12 @@ variable.controller('mainController', function($scope) {
 	var device = 'desktop';
         if(jQuery.browser.mobile === true){
             device = 'mobile';
+        }
+        
+	$scope.header = { name: 'header.html', url: 'lib/partials/' + device + '/header.html' };
+	$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
+	$(".rslides").responsiveSlides(); 
+	
             $scope.ddMenuOptions = [
 	        {
 	            // Example of an option with the 'href' property
@@ -80,12 +86,6 @@ variable.controller('mainController', function($scope) {
 	        }
 	    	];
     		$scope.ddMenuSelected = {};
-        }
-        
-	$scope.header = { name: 'header.html', url: 'lib/partials/' + device + '/header.html' };
-	$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
-	$(".rslides").responsiveSlides(); 
-	
 });
 
 	
