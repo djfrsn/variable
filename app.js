@@ -2,7 +2,7 @@
 
 // create the module and name it variable
 	// also include ngRoute for all our routing needs
-var variable = angular.module('variable', ['ngRoute', 'ngAnimate', 'ngDropdowns', 'ngTouch']);
+var variable = angular.module('variable', ['ngRoute', 'ngAnimate', 'ngDropdowns']);
 
 	// Route main navigation links
 	variable.config(function($routeProvider) 
