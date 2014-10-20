@@ -46,6 +46,8 @@
 .mobileNav
 {
     color: $secondary;
+    margin: 0 auto;
+    width: 320px;
 }
 /* Nav
 */
@@ -57,7 +59,7 @@
     @include rem(padding-top, 0.4rem);
     display: inline-block; 
 
-    @include rem(width, 9rem);
+    @include rem(width, 40rem);
     @include rem(margin, 0 0 0 1rem);
     @include respond-to(small-lap)
         {
@@ -78,7 +80,6 @@
     height: 100%;
     color: $tertiary;
     text-transform: uppercase;
-
         @include respond-to(small-lap)
         {
             position: static;
@@ -90,8 +91,8 @@
         background-color: $secondary;       
         list-style: none;   
         text-align: center; 
-
-        @include rem(padding, 1rem);
+        display: inline-block; 
+        @include rem(padding, 0.2rem);
         @include rem(font-size, 1.5rem);
             @include respond-to(small-lap)
             {
@@ -112,6 +113,8 @@
         -o-transition: background-color 0.5s ease-out;
         -moz-transition: background-color 0.5s ease-out;
         -webkit-transition: background-color 0.5s ease-out;
+        
+        display: inline-block;
         @include respond-to(small-lap)
         {
             display: block;
