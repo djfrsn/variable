@@ -46,6 +46,10 @@
     color: $secondary;
     float: right;
     @include rem(padding, 1rem 2rem);
+    @include respond-to(large-lap)
+    {
+        @include rem(padding, 2rem 4rem);
+    }
 }
 /* Nav
 */

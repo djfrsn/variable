@@ -86,7 +86,7 @@ variable.controller('mainController', function($scope) {
 	},
 	{
 		text: 'Contact',
-		url: '#'
+		url: '#contact'
 	}
 	];
 });
