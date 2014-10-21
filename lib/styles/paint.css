@@ -212,8 +212,12 @@ img, video, object { max-width: 100%; }
 
 /* Mobile Nav
 */
-.mobileNav { color: #4b5b6e; float: right; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 10px 20px; /* 9 */ padding: 1rem 2rem; /* 9 */ /* 1024px */ }
+.mobileNav { display: inline-block; float: right; color: #4b5b6e; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 10px 20px; /* 9 */ padding: 1rem 2rem; /* 9 */ /* 1024px */ }
 @media (min-width: 64em) { .mobileNav { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 20px 40px; /* 9 */ padding: 2rem 4rem; /* 9 */ } }
+
+#dropdownLinks { text-align: center; }
+
+#dropdownLinks li { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 20px; /* 9 */ font-size: 2rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 20px; /* 9 */ padding: 2rem; /* 9 */ }
 
 /* Nav
 */
