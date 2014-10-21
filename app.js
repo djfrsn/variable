@@ -2,7 +2,7 @@
 
 // create the module and name it variable
 	// also include ngRoute for all our routing needs
-var variable = angular.module('variable', ['ngRoute', 'ngAnimate']);
+var variable = angular.module('variable', ['ngRoute', 'ngAnimate', 'mm.foundation']);
 
 	// Route main navigation links
 	variable.config(function($routeProvider) 
