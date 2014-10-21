@@ -184,6 +184,8 @@ img, video, object { max-width: 100%; }
 */
 /* Container
 */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak { display: none !important; }
+
 .container { color: #f1f2df; }
 
 .animate-if.ng-enter { -webkit-transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s; transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s; }

@@ -24,20 +24,20 @@
     <script src='lib/js/activeRoute.js' ></script>
 </head>
 
-<body ng-controller='mainController'>
+<body ng-controller='mainController' ng-cloak>
 
     <!-- Add your site or app content here -->
 
 <div class='container'>
 
-    <header class='header row' ng-include src='header.url'></header> <! --=============- Header -=============-- > 
+    <header class='header row' ng-include src='header.url' ng-cloak></header> <! --=============- Header -=============-- > 
 
     <section id="main">    
         <route-loading-indicator></route-loading-indicator>
-        <div ng-if='!isRouteLoading' class='animate-if' ng-view></div> <! --=============- View -=============-- > 
+        <div ng-if='!isRouteLoading' class='animate-if' ng-view ng-cloak></div> <! --=============- View -=============-- > 
     </section> 
 
-    <footer class='footer row' ng-include src='footer.url'></footer> <! --=============- Footer -=============-- > 
+    <footer class='footer row' ng-include src='footer.url' ng-cloak></footer> <! --=============- Footer -=============-- > 
 
 </div>
 
