@@ -67,12 +67,27 @@ variable.controller('mainController', function($scope) {
 	$(".rslides").responsiveSlides(); 
 
 	// Assign dropdown menu links
-  	$scope.linkItems = {
-  	  "Home": "#",
-  	  "Work": "#work",
-  	  "Services": '#services',
-  	  "Blog": '#blog',
-  	  "Contact": '#contact'
-  	};
+	$scope.navLinks = [
+	{
+		text: 'Home',
+		url: '#'
+	},
+	{
+		text: 'Work',
+		url: '#work'
+	},
+	{
+		text: 'Services',
+		url: '#services'
+	},
+	{
+		text: 'Blog',
+		url: '#blog'
+	},
+	{
+		text: 'Contact',
+		url: '#'
+	}
+	];
 });
 	

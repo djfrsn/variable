@@ -1,6 +1,6 @@
 @mixin respond-to($media) {
 	@if $media == palm-max { /* 360px */
-		@media (max-width: 23.5em) { @content; }		
+		@media (max-width: 22.4em) { @content; }		
 	}
 	@if $media == palm { /* 360px */
 		@media (min-width: 22.5em) { @content; }		
