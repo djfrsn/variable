@@ -28,7 +28,7 @@ display: none !important;
     -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  @include rem(height,120px);
+  @include rem(height,122rem);
   width:100%;
   color: $secondary;
   @include rem(margin-top,100px);
