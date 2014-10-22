@@ -70,23 +70,23 @@ variable.controller('mainController', function($scope) {
 	$scope.navLinks = [
 	{
 		text: 'Home',
-		url: '#'
+		href: '#'
 	},
 	{
 		text: 'Work',
-		url: '#work'
+		href: '#work'
 	},
 	{
 		text: 'Services',
-		url: '#services'
+		href: '#services'
 	},
 	{
 		text: 'Blog',
-		url: '#blog'
+		href: '#blog'
 	},
 	{
 		text: 'Contact',
-		url: '#contact'
+		href: '#contact'
 	}
 	];
 });
