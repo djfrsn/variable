@@ -60,7 +60,7 @@
 	}
 	@include respond-to(small-lap)
 	{
-		max-width: 79.8em;
+		@include rem(max-width, 70.8rem);
 	}
 	h1
 	{
