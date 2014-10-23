@@ -4740,32 +4740,7 @@ ul.off-canvas-list li a:hover { background: #242424 }
 }
 .f-dropdown>*:first-child { margin-top: 0 }
 .f-dropdown>*:last-child { margin-bottom: 0 }
-.f-dropdown:before {
-    position: absolute;
-    top: -12px;
-    left: 10px;
-    z-index: 99;
-    display: block;
-    width: 0;
-    height: 0;
-    border: inset 6px;
-    border-color: transparent transparent #fff transparent;
-    border-bottom-style: solid;
-    content: "";
-}
-.f-dropdown:after {
-    position: absolute;
-    top: -14px;
-    left: 9px;
-    z-index: 98;
-    display: block;
-    width: 0;
-    height: 0;
-    border: inset 7px;
-    border-color: transparent transparent #ccc transparent;
-    border-bottom-style: solid;
-    content: "";
-}
+
 .f-dropdown.right:before {
     right: 10px;
     left: auto;
