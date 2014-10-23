@@ -1,4 +1,4 @@
-
+// Variable Application JS 
 
 // create the module and name it variable
 	// also include ngRoute for all our routing needs
@@ -14,7 +14,7 @@ var variable = angular.module('variable', ['ngRoute', 'ngAnimate', 'mm.foundatio
 				templateUrl : 'pages/home.html',
 				controller : 'mainController'
 			})
-			// route for the home page
+			// explicit route for the home page
 			.when('#home', {
 				templateUrl : 'pages/home.html',
 				controller : 'mainController'
@@ -43,7 +43,6 @@ var variable = angular.module('variable', ['ngRoute', 'ngAnimate', 'mm.foundatio
 				templateUrl : 'pages/contact.html',
 				controller : 'mainController'
 			});
-			
 	});
 	
 // Main controller
@@ -56,38 +55,40 @@ variable.controller('mainController', function($scope) {
 	// assign device depending on browser UA
 	var device = 'desktop';
         if(jQuery.browser.mobile === true){
+        	// name device mobile
             device = 'mobile';
+
+            // Assign dropdown menu links
+			$scope.navLinks = [
+			{
+				text: 'Home',
+				url: '#'
+			},
+			{
+				text: 'Work',
+				url: '#work'
+			},
+			{
+				text: 'Services',
+				url: '#services'
+			},
+			{
+				text: 'Blog',
+				url: '#blog'
+			},
+			{
+				text: 'Contact',
+				url: '#contact'
+			}
+			];
         } 
 
-    // Pair the header to a relative device dir    
+    // Pair the header to the detected device dir    
 	$scope.header = { name: 'header.html', url: 'lib/partials/' + device + '/header.html' };
 	$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
 
 	// Init intro image slider
 	$(".rslides").responsiveSlides(); 
 
-	// Assign dropdown menu links
-	$scope.navLinks = [
-	{
-		text: 'Home',
-		url: '#'
-	},
-	{
-		text: 'Work',
-		url: '#work'
-	},
-	{
-		text: 'Services',
-		url: '#services'
-	},
-	{
-		text: 'Blog',
-		url: '#blog'
-	},
-	{
-		text: 'Contact',
-		url: '#contact'
-	}
-	];
 });
 	
