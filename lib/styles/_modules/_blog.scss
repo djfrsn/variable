@@ -34,6 +34,11 @@
 
 .blog_wrap
 {
+	a:hover
+	{
+		text-decoration: underline;
+		color: $tertiary;
+	}
 	@include respond-to(large-palm-bridge)
 	{
 		margin: 0 auto;

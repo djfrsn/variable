@@ -54,6 +54,12 @@
 	}
 }
 
+.work_wrap a:hover
+{ 
+	text-decoration: underline;
+	color: $tertiary;
+}
+
 @include respond-to(large-lap)
 {
 	.work_wrap .crop
