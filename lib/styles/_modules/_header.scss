@@ -20,6 +20,7 @@
     text-transform: capitalize;
     font-weight: 600;
     margin-top: 0;
+    @include rem(height, 7rem);
     @include respond-to(palm-max)
     {
         @include rem(font-size, 3.2rem);  
