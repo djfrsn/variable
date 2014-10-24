@@ -91,3 +91,70 @@ variable.controller('mainController', function($scope) {
 	$(".rslides").responsiveSlides(); 
 
 });
+
+
+
+var ModalDemoCtrl = function ($scope, $modal, $log) {
+
+	$(".rslides").responsiveSlides(); 
+  $scope.imgs = [
+  	{
+  		src: 'lib/imgs/1.jpg',
+  		text: 'image 1'
+  	},
+  	{
+  		src: 'lib/imgs/2.jpg',
+  		text: 'image 2'
+  	},
+  	{
+  		src: 'lib/imgs/3.jpg',
+  		text: 'image 3'
+  	},
+  	{
+  		src: 'lib/imgs/4.jpg',
+  		text: 'image 4'
+  	},
+  	{
+  		src: 'lib/imgs/5.jpg',
+  		text: 'image 5'
+  	}
+  ];
+
+  $scope.open = function () {
+
+    var modalInstance = $modal.open({
+      templateUrl: 'img.html',
+      controller: ModalInstanceCtrl,
+      resolve: {
+        imgs: function () {
+          return $scope.imgs;
+        }
+      }
+    });
+
+    modalInstance.result.then(function (selectedImg) {
+      $scope.selected = selectedImg;
+    }, function () {
+      $log.info('Modal dismissed at: ' + new Date());
+    });
+  };
+};
+
+// Please note that $modalInstance represents a modal window (instance) dependency.
+// It is not the same as the $modal service used above.
+
+var ModalInstanceCtrl = function ($scope, $modalInstance, imgs) {
+
+  $scope.imgs = imgs; 
+  $scope.selected = {
+    img: $scope.imgs[0]
+  };
+
+  $scope.ok = function () {
+    $modalInstance.close($scope.selected.img);
+  };
+
+  $scope.cancel = function () {
+    $modalInstance.dismiss('cancel');
+  };
+};
