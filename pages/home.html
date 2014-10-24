@@ -31,15 +31,12 @@
                         <div class="work_wrap">
                             <h1><a ng-href="#work">our work</a></h1>
                             <div ng-controller="ModalDemoCtrl">
-  <script type="text/ng-template" id="myModalContent.html">
+  <script type="text/ng-template" id="img.html">
       <div ng-repeat="img in imgs">
-        <img src='{{ img.src }}'></img>
+        <img class='work_img' src='{{ img.src }}'></img>
       </div>
-    <button class="button" ng-click="ok()">OK</button>
     <a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
   </script>
-
-  <div ng-show="selected">Selection from a modal: {{ selected }}</div>
 
                             <div class="crop"><a ng-click="open()"><img src='lib/imgs/1.jpg'></a></div>
                             <div class="crop"><a ng-click="open()"><img src='lib/imgs/2.jpg'></a></div>

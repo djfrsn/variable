@@ -74,6 +74,26 @@
 		@include rem(margin-bottom, 7rem);
 	}
 }
+
+.work_img
+{
+	@include rem(padding, 2rem 0);
+}
+.reveal-modal,
+dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1005;
+    display: none;
+    visibility: hidden;
+    padding: 1.25rem;
+    padding: 1.875rem;
+    width: 100vw;
+    border-radius: 3px;
+    background-color: $secondary;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
 /******************
 
 	Media Query

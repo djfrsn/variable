@@ -303,6 +303,10 @@ img, video, object { max-width: 100%; }
 /* 1024px */
 @media (min-width: 64em) { .work_wrap .crop { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-height: 230px; /* 9 */ max-height: 23rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 340px; /* 9 */ max-width: 34rem; /* 9 */ overflow: hidden; float: left; }
   .work_wrap div:last-of-type { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-bottom: 70px; /* 9 */ margin-bottom: 7rem; /* 9 */ } }
+.work_img { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ padding: 20px 0; /* 9 */ padding: 2rem 0; /* 9 */ }
+
+.reveal-modal, dialog { position: absolute; top: 0; left: 0; z-index: 1005; display: none; visibility: hidden; padding: 1.25rem; padding: 1.875rem; width: 100vw; border-radius: 3px; background-color: #4b5b6e; box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+
 /******************
 
 	Media Query
