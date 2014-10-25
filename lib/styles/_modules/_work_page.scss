@@ -52,3 +52,18 @@
 	Media Query
 	
 ******************/
+
+@include respond-to(small-lap)
+{
+	.work_page .crop
+	{
+		@include rem(max-height, 32rem);
+		@include rem(max-width, 48rem);
+		overflow: hidden;
+		float: left; 
+	}
+.work_page div:last-of-type
+	{
+		@include rem(margin-bottom, 7rem);
+	}
+}
