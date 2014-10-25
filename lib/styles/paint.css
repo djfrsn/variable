@@ -475,22 +475,11 @@ button { padding: 0.8rem 0.3rem 0.8rem 0; background-color: #f1f2df; color: #343
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="color"]:focus, textarea:focus { outline: none; border-color: #999; background: #4b5b6e; }
 
-#google-container { position: relative; width: 100%; height: 200px; background-color: #f1f2df; /* 768px */ /* 1024px */ }
-@media (min-width: 48em) { #google-container { height: 300px; } }
-@media (min-width: 64em) { #google-container { height: 600px; } }
+.map_address { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 20px 0 10px; /* 9 */ padding: 2rem 0 1rem; /* 9 */ }
 
-#cd-google-map { position: relative; }
-#cd-google-map address { position: absolute; width: 100%; bottom: 0; left: 0; padding: 1em 1em; background-color: #f1f2df; color: #4b5b6e; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 13px; /* 9 */ font-size: 1.3rem; /* 9 */ /* 768px */ }
-@media (min-width: 48em) { #cd-google-map address { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 15px; /* 9 */ font-size: 1.5rem; /* 9 */ text-align: center; } }
+.gm-style-iw { color: #4b5b6e; }
 
-#cd-zoom-in, #cd-zoom-out { height: 32px; width: 32px; cursor: pointer; margin-left: 10px; background-color: #f1f2df; background-repeat: no-repeat; background-size: 32px 64px; background-image: url("../img/cd-icon-controller.svg"); /* 768px */ }
-.no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover { background-color: #f1f2df; }
-@media (min-width: 48em) { #cd-zoom-in, #cd-zoom-out { margin-left: 50px; } }
-
-#cd-zoom-in { background-position: 50% 0; margin-top: 10px; margin-bottom: 1px; /* 768px */ }
-@media (min-width: 48em) { #cd-zoom-in { margin-top: 50px; } }
-
-#cd-zoom-out { background-position: 50% -32px; }
+.gmnoprint { display: none; }
 
 /*
 **
