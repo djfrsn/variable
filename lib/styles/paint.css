@@ -459,6 +459,8 @@ aside li:before { position: relative; top: 0.9em; left: -1em; display: block; wi
 .contact .email { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-left: 34px; /* 9 */ padding-left: 3.4rem; /* 9 */ }
 .contact .skype { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-left: 37px; /* 9 */ padding-left: 3.7rem; /* 9 */ }
 
+.contact_wrap { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 768px; /* 9 */ max-width: 76.8rem; /* 9 */ }
+
 .field { margin: 1em 0; }
 
 placeholder { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 14px; /* 9 */ font-size: 1.4rem; /* 9 */ }

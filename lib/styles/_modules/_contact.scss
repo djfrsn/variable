@@ -44,6 +44,10 @@
 		@include rem(padding-left, 3.7rem);
 	}
 }
+.contact_wrap
+{
+	@include rem(max-width, 76.8rem);
+}
 .field {
   margin: 1em 0;
 }
