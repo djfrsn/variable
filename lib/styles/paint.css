@@ -524,6 +524,7 @@ section.download_studio.row { margin: 0; padding: 0; max-width: 100%; width: 100
 .lower_nav_links ul { float: left; list-style: none; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 15px; /* 9 */ font-size: 1.5rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 5 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ margin: 0 10px 0; /* 9 */ margin: 0 1rem 0; /* 9 */ }
 .lower_nav_links ul:last-of-type { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-left: 15px; /* 9 */ padding-left: 1.5rem; /* 9 */ }
 .lower_nav_links li:before { position: relative; top: 0.9em; left: -1em; display: block; width: 4px; height: 5px; background: url(../imgs/marker-1.png); content: ""; }
+.lower_nav_links a:hover { text-decoration: underline; color: #79bd9a; }
 
 .footer { background-color: #79bd9a; color: #f1f2df; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 30px 10px; /* 9 */ padding: 3rem 1rem; /* 9 */ }
 .footer p { text-align: center; }
