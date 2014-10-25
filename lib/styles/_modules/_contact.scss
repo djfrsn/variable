@@ -59,15 +59,13 @@ placeholder {
 input {
   width: 100%;
   padding: 0.5em 0.5em;
-  
-@include rem(font-size, 1.4rem);
+  @include rem(font-size, 1.4rem);
   border-radius: 3px;
-  color: $primary;
+  color: $tertiary;
   background-color: $secondary;
   border: none;
   border-bottom: 1px dashed $primary;
 }
-
 textarea {
   width: 100%;
   height: 200px;
@@ -75,7 +73,6 @@ textarea {
   @include rem(font-size, 1.4rem);
   background-color: $secondary;
   border-radius: 3px;
-  color: $tertiary;
   border: none;
   border-bottom: 1px dashed $primary;
 }
@@ -132,6 +129,7 @@ textarea:focus {
     outline: none;
     border-color: #999;
     background: $secondary;
+	color: $tertiary;
 }
 
 .map_address
