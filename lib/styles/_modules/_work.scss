@@ -54,6 +54,10 @@
 	}
 }
 
+	.first img
+	{
+		margin-left: 0;
+	}
 .work_wrap a:hover
 { 
 	text-decoration: underline;
@@ -65,7 +69,7 @@
 	.work_wrap .crop
 	{
 		@include rem(max-height, 23rem);
-		@include rem(max-width, 34rem);
+		@include rem(max-width, 33rem);
 		overflow: hidden;
 		float: left; 
 	}
@@ -122,7 +126,7 @@ dialog {
 	.work_wrap
 	{
 		margin: 0 auto;
-		@include rem(width, 104rem);
+		@include rem(width, 99rem);
 	}
 }
 @include respond-to(desk)
@@ -133,6 +137,6 @@ dialog {
 		
 		margin: 0 auto;
 
-		@include rem(max-width, 104rem);
+		@include rem(max-width, 99rem);
 	}
 }
