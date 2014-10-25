@@ -298,10 +298,12 @@ img, video, object { max-width: 100%; }
 @media (min-width: 48em) { .work img:nth-child(2), .work img:nth-child(5), .work img:nth-child(8) { margin-left: 0; } }
 @media (min-width: 64em) { .work img:nth-child(2), .work img:nth-child(5), .work img:nth-child(8) { margin-left: 2rem; } }
 
+.first img { margin-left: 0; }
+
 .work_wrap a:hover { text-decoration: underline; color: #79bd9a; }
 
 /* 1024px */
-@media (min-width: 64em) { .work_wrap .crop { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-height: 230px; /* 9 */ max-height: 23rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 340px; /* 9 */ max-width: 34rem; /* 9 */ overflow: hidden; float: left; }
+@media (min-width: 64em) { .work_wrap .crop { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-height: 230px; /* 9 */ max-height: 23rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 330px; /* 9 */ max-width: 33rem; /* 9 */ overflow: hidden; float: left; }
   .work_wrap div:last-of-type { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-bottom: 70px; /* 9 */ margin-bottom: 7rem; /* 9 */ } }
 .work_img { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ padding: 20px 0; /* 9 */ padding: 2rem 0; /* 9 */ }
 
@@ -317,9 +319,9 @@ img, video, object { max-width: 100%; }
 /* 768px */
 @media (min-width: 48em) { .work_wrap { margin: 0 auto; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 680px; /* 9 */ width: 68rem; /* 9 */ } }
 /* 1024px */
-@media (min-width: 64em) { .work_wrap { margin: 0 auto; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 1040px; /* 9 */ width: 104rem; /* 9 */ } }
+@media (min-width: 64em) { .work_wrap { margin: 0 auto; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 990px; /* 9 */ width: 99rem; /* 9 */ } }
 /* 1280px */
-@media (min-width: 80em) { .work_wrap { width: 100%; margin: 0 auto; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 1040px; /* 9 */ max-width: 104rem; /* 9 */ } }
+@media (min-width: 80em) { .work_wrap { width: 100%; margin: 0 auto; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 990px; /* 9 */ max-width: 99rem; /* 9 */ } }
 /*
 **
 *** Projects
@@ -338,6 +340,9 @@ img, video, object { max-width: 100%; }
 	Media Query
 	
 ******************/
+/* 768px */
+@media (min-width: 48em) { .work_page .crop { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-height: 320px; /* 9 */ max-height: 32rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 480px; /* 9 */ max-width: 48rem; /* 9 */ overflow: hidden; float: left; }
+  .work_page div:last-of-type { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-bottom: 70px; /* 9 */ margin-bottom: 7rem; /* 9 */ } }
 .blog { background-color: #343444; }
 .blog h1 { color: #f1f2df; font-weight: 300; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 50px; /* 9 */ font-size: 5rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 30px 0 10px; /* 9 */ padding: 3rem 0 1rem; /* 9 */ }
 .blog h2 { color: #f1f2df; text-transform: capitalize; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 30px; /* 9 */ font-size: 3rem; /* 9 */ }

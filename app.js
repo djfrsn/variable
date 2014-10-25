@@ -2,7 +2,7 @@
 
 // create the module and name it variable
 	// also include ngRoute for all our routing needs
-var variable = angular.module('variable', ['ngRoute', 'ngAnimate', 'mm.foundation']);
+var variable = angular.module('variable', ['ngRoute', 'ngAnimate', 'mm.foundation', 'ngMap']);
 
 	// Route main navigation links
 	variable.config(function($routeProvider) 
@@ -89,7 +89,19 @@ variable.controller('mainController', function($scope) {
 
 	// Init intro image slider
 	$(".rslides").responsiveSlides(); 
+ $scope.$on('mapInitialized', function(event, map) {
+    navigator.geolocation.getCurrentPosition(function(position) {
+      var pos = new google.maps.LatLng(position.coords.latitude,
+                                       position.coords.longitude);
+      var infowindow = new google.maps.InfoWindow({
+        map: map,
+        position: pos,
+        content: 'Location found using HTML5.'
+      });
 
+      map.setCenter(pos);
+    });
+  });
 });
 
 
