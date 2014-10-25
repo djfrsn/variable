@@ -78,7 +78,6 @@
 .lower_nav_links
 {
 	color: $primary;
-
 	@include rem(padding-bottom, 4.5rem);
 	h2
 	{
@@ -109,5 +108,10 @@
     height: 5px;
     background: url(../imgs/marker-1.png); 
     content: "";
+	}
+	a:hover
+	{
+		text-decoration: underline;
+		color: $tertiary;
 	}
 }
