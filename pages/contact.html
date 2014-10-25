@@ -1,5 +1,5 @@
 <section class="contact row">
-            <div class="small-centered small-12 medium-centered medium-7 large-centered large-7 column">
+            <div class="contact_wrap small-centered small-12 medium-centered medium-7 large-centered large-7 column">
                 <article>
                     <h2>contact us</h2>
                     <div id="form-messages"></div>
@@ -22,23 +22,26 @@
             </div>
         </form>
                 </article>
-                <article>
+                <article class='contact_info_wrap'>
                     <h2>contact info</h2>
 
-                   <map center="0, 0" zoom="8"></map>
-                    <p>Mobile:
-                        <a class='mobile' href="tel:+914592495">(914)592-495</a>
-                        <p>Telephone:
-                            <a class='tel' href="tel:+9145825823">(914)582-5823</a>
-                            <p>Fax:
-                                <a class='fax'href="tel:+914598523">(914)259-8523</a>
-                                <p>E-mail:
-                                    <a class='primary email' href="mailto:dj@dennisjefferson.com">dj@dennisjefferson.com</a>
-                                    <p>Skype:<a class='primary skype' href="skype:djfrsn?chat">@djfrsn</a></p>
-                                </p>
-                            </p>
+                   <map center="34.0977490,-118.3299090" zoom="8"><marker id='contact_page_marker' position="34.0977490,-118.3299090" title="Los Angeles, CA" on-click="showInfoWindow(event, 'contact_page_marker_info_window')"></marker><info-window id="contact_page_marker_info_window" visible-on-marker="contact_page_marker">
+        <div ng-non-bindable="">
+          Currently residing in LA.
+          </div>
+      </info-window></map>
+                   <p class='map_address'>6430 W. Sunset Blvd,<br>
+                        Los Angeles, CA
                         </p>
-                    </p>
+                    <p>Mobile:
+                    <a class='mobile' href="tel:+914592495">(914)592-495</a></p>
+                    <p>Telephone:
+                    <a class='tel' href="tel:+9145825823">(914)582-5823</a></p>
+                    <p>Fax:
+                    <a class='fax'href="tel:+914598523">(914)259-8523</a></p>
+                    <p>E-mail:
+                    <a class='primary email' href="mailto:dj@dennisjefferson.com">dj@dennisjefferson.com</a></p>
+                    <p>Skype:<a class='primary skype' href="skype:djfrsn?chat">@djfrsn</a></p>
                 </article>
             </div>
         </section>

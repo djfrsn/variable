@@ -44,6 +44,10 @@
 		@include rem(padding-left, 3.7rem);
 	}
 }
+.contact_wrap
+{
+	@include rem(max-width, 76.8rem);
+}
 .field {
   margin: 1em 0;
 }
@@ -130,70 +134,15 @@ textarea:focus {
     background: $secondary;
 }
 
-#google-container {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    background-color: $primary;
-
-    @include respond-to(small-lap) {
-    	height: 300px;
-    }
-
-    @include respond-to(large-lap) {
-    	height: 600px;
-    }
+.map_address
+{
+	@include rem(padding, 2rem 0 1rem);
 }
-
-#cd-google-map {
-	position: relative;
-
-	address {
-		position: absolute;
-		width: 100%;
-		bottom: 0;
-		left: 0;
-		padding: 1em 1em;
-		background-color: $primary;
-		color: $secondary;
-		@include rem(font-size, 13px);
-
-		@include respond-to(small-lap) {
-			@include rem(font-size, 15px);
-			text-align: center;
-		}
-	}
+.gm-style-iw
+{
+	color: $secondary;
 }
-
-#cd-zoom-in, #cd-zoom-out {
-	height: 32px;
-	width: 32px;
-	cursor: pointer;
-	margin-left: 10px;
-	background-color: $primary;
-	background-repeat: no-repeat;
-	background-size: 32px 64px;
-	background-image: url('../img/cd-icon-controller.svg');
-
-	.no-touch &:hover {
-		background-color: $primary;
-	}
-
-	@include respond-to(small-lap) {
-		margin-left: 50px;
-	}
-}
-
-#cd-zoom-in {
-	background-position: 50% 0;
-	margin-top: 10px;
-	margin-bottom: 1px;
-
-	@include respond-to(small-lap) {
-		margin-top: 50px;
-	}
-}
-
-#cd-zoom-out {
-	background-position: 50% -32px;
+.gmnoprint
+{
+	display: none; 
 }
