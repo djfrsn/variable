@@ -88,7 +88,11 @@ variable.controller('mainController', function($scope) {
 	$scope.footer = { name: 'footer.html', url: 'lib/partials/footer.html' };
 
 	// Init intro image slider
-	$(".rslides").responsiveSlides(); 
+	$(".rslides").responsiveSlides({
+  		auto: true,             // Boolean: Animate automatically, true or false
+	  	speed: 750,            // Integer: Speed of the transition, in milliseconds
+	  	timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+	});
 	
 });
 
