@@ -103,23 +103,18 @@ var ModalDemoCtrl = function ($scope, $modal, $log) {
   $scope.imgs = [
   	{
   		src: 'lib/imgs/1.jpg',
-  		text: 'image 1'
   	},
   	{
-  		src: 'lib/imgs/2.jpg',
-  		text: 'image 2'
+  		src: 'lib/imgs/2.jpg'
   	},
   	{
-  		src: 'lib/imgs/3.jpg',
-  		text: 'image 3'
+  		src: 'lib/imgs/3.jpg'
   	},
   	{
-  		src: 'lib/imgs/4.jpg',
-  		text: 'image 4'
+  		src: 'lib/imgs/4.jpg'
   	},
   	{
-  		src: 'lib/imgs/5.jpg',
-  		text: 'image 5'
+  		src: 'lib/imgs/5.jpg'
   	}
   ];
 
@@ -131,9 +126,6 @@ var ModalDemoCtrl = function ($scope, $modal, $log) {
       resolve: {
         imgs: function () {
           return $scope.imgs;
-        },
-        rslides: function () {
-
         }
       }
     });
