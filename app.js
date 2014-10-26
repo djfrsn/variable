@@ -98,7 +98,7 @@ variable.controller('mainController', function($scope) {
 
 
 
-var modalCtrl = function ($scope, $modal, $log) {
+var ModalDemoCtrl = function ($scope, $modal, $log) {
 	
   $scope.imgs = [
   	{
@@ -131,6 +131,9 @@ var modalCtrl = function ($scope, $modal, $log) {
       resolve: {
         imgs: function () {
           return $scope.imgs;
+        },
+        rslides: function () {
+
         }
       }
     });
