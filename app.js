@@ -89,7 +89,7 @@ variable.controller('mainController', function($scope) {
 
 	// Init intro image slider
 	$(".rslides").responsiveSlides(); 
-
+	
 });
 
 
