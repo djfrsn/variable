@@ -94,7 +94,7 @@ variable.controller('mainController', function($scope) {
 
 
 
-var ModalDemoCtrl = function ($scope, $modal, $log) {
+var modalCtrl = function ($scope, $modal, $log) {
 	
   $scope.imgs = [
   	{
