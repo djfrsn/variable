@@ -17,6 +17,9 @@
 	@if $media == large-palm-bridge { /* 600px */
 		@media (min-width: 37.50em) { @content; }		
 	}
+	@if $media == large-palm-jet { /* 600px */
+		@media (min-width: 40em) { @content; }		
+	}
 	@if $media == large-palm-bridge-max { /* 600px */
 		@media (min-width: 37.50em) and (max-width: 60.063em) { @content; }		
 	}
@@ -31,6 +34,9 @@
 	}
 	@if $media == small-lap-bridge { /* 768px */
 		@media (min-width: 48em) and (max-width: 50rem) { @content; }		
+	}
+	@if $media == small-lap-squall { /* 768px */
+		@media (min-width: 54.69em) { @content; }		
 	}
 	@if $media == large-lap { /* 1024px */
 		@media (min-width: 64em) { @content; }		
