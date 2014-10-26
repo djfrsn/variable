@@ -1212,24 +1212,23 @@ select { width: 100% }
 
 button,
 .button {
-    position: relative;
-    display: inline-block;
-    padding-top: 1rem;
-    padding-right: 2rem;
-    padding-bottom: 1.0625rem;
-    padding-left: 2rem;
-    border-width: 0px;
-    border-style: solid;
-    -webkit-border-radius: 0;
-    text-align: center;
-    text-decoration: none;
-    font-weight: normal;
-    font-size: 1rem;
-    line-height: normal;
-    cursor: pointer;
-    transition: background-color 300ms ease-out;
-
-    -webkit-appearance: none;
+position: relative;
+display: inline-block;
+padding-top: 0.7rem;
+padding-right: 1rem;
+padding-bottom: 0.8625rem;
+padding-left: 1rem;
+border-width: 0px;
+border-style: solid;
+-webkit-border-radius: 0;
+text-align: center;
+text-decoration: none;
+font-weight: normal;
+font-size: 1.5rem;
+line-height: normal;
+cursor: pointer;
+transition: background-color 300ms ease-out;
+-webkit-appearance: none;
 }
 @media only screen and (min-width: 40.063em) { 
     button,
