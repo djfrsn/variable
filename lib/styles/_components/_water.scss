@@ -35,7 +35,7 @@
 	@if $media == small-lap-bridge { /* 768px */
 		@media (min-width: 48em) and (max-width: 50rem) { @content; }		
 	}
-	@if $media == small-lap-squall { /* 768px */
+	@if $media == small-lap-squall { /* 860px */
 		@media (min-width: 54.69em) { @content; }		
 	}
 	@if $media == large-lap { /* 1024px */
