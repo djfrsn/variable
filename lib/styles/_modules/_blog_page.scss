@@ -47,6 +47,15 @@
 {
 	@include rem(padding-top, 2rem);
 }
+
+.blog_page_widget
+{
+	    a:hover
+    {
+      text-decoration: underline;
+      color: $tertiary;
+    }
+}
 @include respond-to(desk)
 {
 	.blog_widgets
