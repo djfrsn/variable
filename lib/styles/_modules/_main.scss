@@ -41,3 +41,11 @@ display: none !important;
   transform: translateY(-50%);
   @include rem(font-size, 2rem);
 }
+
+.button
+{
+    border-color: $secondary;
+    background-color: $primary;
+    @include rem(margin, 1rem 0 3rem);
+    color: $secondary;
+}
