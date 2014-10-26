@@ -1214,17 +1214,13 @@ button,
 .button {
     position: relative;
     display: inline-block;
-    margin: 0 0 1.25rem;
     padding-top: 1rem;
     padding-right: 2rem;
     padding-bottom: 1.0625rem;
     padding-left: 2rem;
     border-width: 0px;
     border-style: solid;
-    border-color: #007095;
     -webkit-border-radius: 0;
-    background-color: #008cba;
-    color: #fff;
     text-align: center;
     text-decoration: none;
     font-weight: normal;

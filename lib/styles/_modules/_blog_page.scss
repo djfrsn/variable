@@ -47,6 +47,15 @@
 {
 	@include rem(padding-top, 2rem);
 }
+
+.blog_page_widget
+{
+	    a:hover
+    {
+      text-decoration: underline;
+      color: $tertiary;
+    }
+}
 @include respond-to(desk)
 {
 	.blog_widgets
@@ -144,18 +153,6 @@
 	@include rem(margin-top, 1rem);
 }
 
-.blog_page_button
-{
-	background-color: $primary;
-	color: $secondary;
-	font-style: italic;
-
-	@include rem(width, 9rem);
-	@include rem(height, 3rem);
-	@include rem(margin, 2rem 0 4rem);
-	@include rem(font-size, 1.5rem);
-	@include rem(padding, 0.8rem 0.5rem 0 0.7rem);
-}
 
 aside
 {
