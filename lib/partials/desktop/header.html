@@ -2,10 +2,10 @@
 
 <nav id='header_navigation_menu' class='small-3 medium-6 large-6 column header_navigation'>
     <ul id='show navigation' class='menu'>
-        <li><a activate-on-route="/" class='home_page_link' ng-href='#'>Home</a></li>
-        <li><a activate-on-route="/work" class='work_link' ng-href='#work'>Work</a></li>
-        <li><a activate-on-route="/services" class='process_link' ng-href='#services'>Services</a></li>
-        <li><a activate-on-route="/blog" class='blog_link' ng-href='#blog'>Blog</a></li> 
-        <li><a activate-on-route="/contact" class='contact_link' ng-href='#contact'>Contact</a></li>
+        <li><a ng-class="{active: location.path() == '/'}" class='home_page_link' ng-href='#'>Home</a></li>
+        <li><a ng-class="{active: location.path() == '/work'}" class='work_link' ng-href='#work'>Work</a></li>
+        <li><a ng-class="{active: location.path() == '/services'}" class='process_link' ng-href='#services'>Services</a></li>
+        <li><a ng-class="{active: location.path() == '/blog'}" class='blog_link' ng-href='#blog'>Blog</a></li> 
+        <li><a ng-class="{active: location.path() == '/contact'}" class='contact_link' ng-href='#contact'>Contact</a></li>
     </ul>
 </nav>
