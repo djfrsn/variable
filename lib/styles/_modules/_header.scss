@@ -21,6 +21,7 @@
     font-weight: 600;
     margin-top: 0;
     @include rem(height, 7rem);
+    @include rem(width, 25rem);
     @include respond-to(palm-max)
     {
         @include rem(font-size, 3.2rem);  
@@ -70,11 +71,11 @@
 
 #header_navigation_menu
 {
-    @include rem(padding-top, 0.4rem);
+    @include rem(padding-top, 2.2rem);
     display: inline-block; 
 
-    @include rem(width, 40rem);
-    @include rem(margin, 0 0 0 1rem);
+    @include rem(width, 44rem);
+            margin: 0;
     @include respond-to(small-lap)
         {
             margin: 0;
@@ -93,7 +94,10 @@
     float: right;
     height: 100%;
     color: $tertiary;
+            position: static;
+            margin-bottom: 0;
     text-transform: uppercase;
+            @include rem(width, 44rem);
         @include respond-to(small-lap)
         {
             position: static;
@@ -106,7 +110,6 @@
         list-style: none;   
         text-align: center; 
         display: inline-block; 
-        @include rem(padding, 0.2rem);
         @include rem(font-size, 1.5rem);
             @include respond-to(small-lap)
             {
@@ -116,10 +119,7 @@
     }
     li:nth-child(n+2)
     {
-        @include respond-to(small-lap)
-        {
             @include rem(margin-left, -0.3rem);
-        }
     }
     li a
     {
@@ -128,7 +128,11 @@
         -moz-transition: background-color 0.5s ease-out;
         -webkit-transition: background-color 0.5s ease-out;
         
-        display: inline-block;
+        display: block;
+            line-height: 51.5px;
+
+            @include rem(height, 4.8rem);
+            @include rem(width, 8rem);
         @include respond-to(small-lap)
         {
             display: block;
@@ -140,17 +144,11 @@
     }
     li:nth-child(5) a
     {
-        @include respond-to(small-lap)
-        {
             @include rem(width, 10rem);
-        }
     }
     li:nth-child(3) a
     {
-        @include respond-to(small-lap)
-        {
             @include rem(width, 10rem);
-        }
     }
     li a:hover, a:focus
     {
@@ -160,11 +158,6 @@
     {
         background-color: $primary;
         transition: background-color 0.5s ease;
-
-            @include respond-to(small-lap)
-            {
-                background-color: $primary;
-            }
     }
 }
 

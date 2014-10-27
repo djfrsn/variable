@@ -208,7 +208,7 @@ img, video, object { max-width: 100%; }
 
 .header.row { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 1170px; /* 9 */ max-width: 117rem; /* 9 */ }
 
-.header_title { font-size: 3.8rem; text-transform: capitalize; font-weight: 600; margin-top: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ height: 70px; /* 9 */ height: 7rem; /* 9 */ /* 360px */ /* 768px */ /* 1024px */ }
+.header_title { font-size: 3.8rem; text-transform: capitalize; font-weight: 600; margin-top: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ height: 70px; /* 9 */ height: 7rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 250px; /* 9 */ width: 25rem; /* 9 */ /* 360px */ /* 768px */ /* 1024px */ }
 @media (max-width: 22.4em) { .header_title { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 32px; /* 9 */ font-size: 3.2rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 215px; /* 9 */ width: 21.5rem; /* 9 */ } }
 @media (min-width: 48em) { .header_title { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 42px; /* 9 */ font-size: 4.2rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 260px; /* 9 */ width: 26rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-top: 4px; /* 9 */ padding-top: 0.4rem; /* 9 */ } }
 @media (min-width: 64em) { .header_title { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 50px; /* 9 */ font-size: 5rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 360px; /* 9 */ width: 36rem; /* 9 */ padding-top: 0; } }
@@ -225,25 +225,21 @@ img, video, object { max-width: 100%; }
 /* Nav
 */
 /** Edit only mobile styles in order to keep small-lap + nav default **/
-#header_navigation_menu { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-top: 4px; /* 9 */ padding-top: 0.4rem; /* 9 */ display: inline-block; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 400px; /* 9 */ width: 40rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 5 */ /* 4 */ /* 5 */ /* 4 */ /* 5 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin: 0 0 0 10px; /* 9 */ margin: 0 0 0 1rem; /* 9 */ /* 768px */ /* 1164px */ }
+#header_navigation_menu { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-top: 22px; /* 9 */ padding-top: 2.2rem; /* 9 */ display: inline-block; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 440px; /* 9 */ width: 44rem; /* 9 */ margin: 0; /* 768px */ /* 1164px */ }
 @media (min-width: 48em) { #header_navigation_menu { margin: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 440px; /* 9 */ width: 44rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-top: 22px; /* 9 */ padding-top: 2.2rem; /* 9 */ } }
 @media (min-width: 72.75em) { #header_navigation_menu { padding-right: 0; } }
 
-.menu { z-index: 100; float: right; height: 100%; color: #79bd9a; text-transform: uppercase; /* 768px */ }
+.menu { z-index: 100; float: right; height: 100%; color: #79bd9a; position: static; margin-bottom: 0; text-transform: uppercase; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 440px; /* 9 */ width: 44rem; /* 9 */ /* 768px */ }
 @media (min-width: 48em) { .menu { position: static; margin-bottom: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 440px; /* 9 */ width: 44rem; /* 9 */ } }
-.menu li { background-color: #4b5b6e; list-style: none; text-align: center; display: inline-block; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 2px; /* 9 */ padding: 0.2rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 15px; /* 9 */ font-size: 1.5rem; /* 9 */ /* 768px */ }
+.menu li { background-color: #4b5b6e; list-style: none; text-align: center; display: inline-block; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 15px; /* 9 */ font-size: 1.5rem; /* 9 */ /* 768px */ }
 @media (min-width: 48em) { .menu li { display: inline-block; padding: 0; } }
-.menu li:nth-child(n+2) { /* 768px */ }
-@media (min-width: 48em) { .menu li:nth-child(n+2) { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-left: -3px; /* 9 */ margin-left: -0.3rem; /* 9 */ } }
-.menu li a { transition: background-color 0.5s ease-out; -o-transition: background-color 0.5s ease-out; -moz-transition: background-color 0.5s ease-out; -webkit-transition: background-color 0.5s ease-out; display: inline-block; /* 768px */ }
+.menu li:nth-child(n+2) { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-left: -3px; /* 9 */ margin-left: -0.3rem; /* 9 */ }
+.menu li a { transition: background-color 0.5s ease-out; -o-transition: background-color 0.5s ease-out; -moz-transition: background-color 0.5s ease-out; -webkit-transition: background-color 0.5s ease-out; display: block; line-height: 51.5px; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ height: 48px; /* 9 */ height: 4.8rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 80px; /* 9 */ width: 8rem; /* 9 */ /* 768px */ }
 @media (min-width: 48em) { .menu li a { display: block; line-height: 51.5px; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ height: 48px; /* 9 */ height: 4.8rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 80px; /* 9 */ width: 8rem; /* 9 */ } }
-.menu li:nth-child(5) a { /* 768px */ }
-@media (min-width: 48em) { .menu li:nth-child(5) a { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 100px; /* 9 */ width: 10rem; /* 9 */ } }
-.menu li:nth-child(3) a { /* 768px */ }
-@media (min-width: 48em) { .menu li:nth-child(3) a { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 100px; /* 9 */ width: 10rem; /* 9 */ } }
+.menu li:nth-child(5) a { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 100px; /* 9 */ width: 10rem; /* 9 */ }
+.menu li:nth-child(3) a { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ width: 100px; /* 9 */ width: 10rem; /* 9 */ }
 .menu li a:hover, .menu a:focus { background-color: #f1f2df; }
-.menu .active { background-color: #f1f2df; transition: background-color 0.5s ease; /* 768px */ }
-@media (min-width: 48em) { .menu .active { background-color: #f1f2df; } }
+.menu .active { background-color: #f1f2df; transition: background-color 0.5s ease; }
 
 /* 768px */
 @media (min-width: 48em) { #show { display: inline-block; } }
