@@ -296,7 +296,7 @@ img, video, object { max-width: 100%; }
 .work img:nth-of-type(2n) { /* 1024px */ }
 @media (min-width: 64em) { .work img:nth-of-type(2n) { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-left: 20px; /* 9 */ margin-left: 2rem; /* 9 */ } }
 .work img:last-of-type { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-bottom: 30px; /* 9 */ margin-bottom: 3rem; /* 9 */ /* 768px */ }
-@media (min-width: 48em) { .work img:last-of-type { margin-bottom: 7rem; } }
+@media (min-width: 48em) { .work img:last-of-type { margin-bottom: 4rem; } }
 .work img:nth-child(2), .work img:nth-child(5), .work img:nth-child(8) { /* 768px */ /* 1024px */ }
 @media (min-width: 48em) { .work img:nth-child(2), .work img:nth-child(5), .work img:nth-child(8) { margin-left: 0; } }
 @media (min-width: 64em) { .work img:nth-child(2), .work img:nth-child(5), .work img:nth-child(8) { margin-left: 2rem; } }
