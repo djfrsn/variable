@@ -1,35 +1,16 @@
 <section class="contact row">
             <div class="contact_wrap small-centered small-12 medium-centered medium-7 large-centered large-7 column">
                 <article>
-                  <div class="col-lg-12 col-md-12 col-sm-12" ng-controller="ContactController">
-  <div class="alert alert-danger" ng-show="error">
-    <button class="close" data-dismiss="alert">x</button>
-    <strong>Error!</strong> An error occured while trying to send message.
-  </div>
-  <div class="alert alert-success" ng-show="success">
-    <button class="close" data-dismiss="alert">x</button>
-    <strong>Success! </strong> Your message was successfully sent.
-  </div>
-  <form role="form" name="contactForm">
-    <div class="form-group" ng-class="{error: contactForm.name.$invalid}">
-    <label>Full Name</label>
-    <input class="form-control" type="text" name="name" ng-model="user.name" required="required" placeholder="Your name">
-      <span class="help-block" ng-show="contactForm.name.$error.required">Required</span>
-    </div>
-    <div class="form-group" ng-class="{error: contactForm.email.$invalid}">
-      <label>Email</label>
-      <input class="form-control" type="email" name="email" ng-model="user.email" required="required" placeholder="Your email address">
-      <span class="help-block" ng-show="contactForm.email.$error.required">Required</span>
-      <span class="help-block" ng-show="contactForm.email.$error.email">Invalid email address</span>
-    </div>
-    <div class="form-group" ng-class="{error: contactForm.message.$invalid}">
-      <label>Message</label>
-      <textarea class="form-control" rows="5" name="message" ng-model="user.body" required="required" placeholder="Your messsage"></textarea>
-      <span class="help-inline" ng-show="contactForm.message.$error.required">Required</span>
-    </div>
-    <button class="btn btn-primary btn-lg btn-block" ng-click="send()" ng-disabled="contactForm.$invalid">Send</button>
-  </form>
-</div>
+                  <form ng-submit="submitForm()" ng-controller="FormController" novalidate>
+  <label for="name">Name</label>
+  <input type="text" name="name" ng-model="formData.name" ng-class="{'error' : errorName}">
+  <label for="email">E-mail</label>
+  <input type="email" name="email" ng-model="formData.email" ng-class="{'error' : errorEmail}">
+  <label for="message">Message</label>
+  <textarea name="message" ng-class="{'error' : errorTextarea}" ng-model="formData.message" cols="30" rows="10"></textarea>
+  <input type="submit" value="Send!" name="submit">
+  <div ng-class="{'submissionMessage' : submission}" ng-bind="submissionMessage"></div>
+</form>
                 </article>
                 <article class='contact_info_wrap'>
                     <h2>contact info</h2>

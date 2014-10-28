@@ -131,7 +131,18 @@ textarea:focus {
     background: $secondary;
 	color: $tertiary;
 }
-
+.error {
+  background-color: rgba(255, 0, 0, 0.2);
+}
+.submissionMessage {
+  background-color: rgba(255,255,255, 0.2);
+  border-radius: 5px;
+  padding: 12px;
+  text-align: center;
+  display: block;
+  box-shadow: 0 0 2px white;
+  width: 60%;
+}
 .map_address
 {
 	@include rem(padding, 2rem 0 1rem);

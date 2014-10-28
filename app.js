@@ -98,37 +98,33 @@ variable.controller('mainController', function($scope, $rootScope, $location) {
 	
 });
 
-function ContactController($scope, $http) {
-  $scope.success = false;
-  $scope.error = false;
-  $scope.send = function () {
- 
-  var htmlBody = '<div>Name: ' + $scope.user.name + '</div>' +
-                 '<div>Email: ' + $scope.user.email + '</div>' +
-                 '<div>Message: ' + $scope.user.body + '</div>' +
-                 '<div>Date: ' + (new Date()).toString() + '</div>';
-  
+ websiteApp.controller('FormController',function($scope, $http) {
+  // creating a blank object to hold our form information.
+  //$scope will allow this to pass between controller and view
+  $scope.formData = {};
+  // submission message doesn't show when page loads
+  $scope.submission = false;
+  $scope.submitForm = function() {
     $http({
-      url: 'https://api.postmarkapp.com/email',
-      method: 'POST',
-      data: {
-        'From': 'foo@foo.com',
-        'To': 'bar@bar.com',
-        'HtmlBody': htmlBody,
-        'Subject': 'New Contact Form Submission'
-      },
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json',
-        'X-Postmark-Server-Token': 'a797be9f-2613-43f9-ac8c-d05a95ea6a61'
+    method : 'POST',
+    url : 'process.php',
+    data : $.param($scope.formData), // pass in data as strings
+    headers : { 'Content-Type': 'application/x-www-form-urlencoded' } // set the headers so angular passing info as form data (not request payload)
+  })
+    .success(function(data) {
+      if (!data.success) {
+       // if not successful, bind errors to error variables
+       $scope.errorName = data.errors.name;
+       $scope.errorEmail = data.errors.email;
+       $scope.errorTextarea = data.errors.message;
+       $scope.submissionMessage = data.messageError;
+       $scope.submission = true; //shows the error message
+      } else {
+      // if successful, bind success message to message
+       $scope.submissionMessage = data.messageSuccess;
+       $scope.formData = {}; // form fields are emptied with this line
+       $scope.submission = true; //shows the sucess message
       }
-    }).
-    success(function (data) {
-    	$scope.success = true;
-    	$scope.user = {};
-    }).
-    error(function (data) {
-    	$scope.error = true;
-    });
-  }
-}
+     });
+   };
+});
