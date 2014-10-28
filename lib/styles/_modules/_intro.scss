@@ -69,7 +69,7 @@
 
 		@include rem(letter-spacing, -1px);
 		@include rem(margin, 3rem 0 0);
-		@include rem(font-size, 5rem);
+		@include rem(font-size, 4.5rem);
 		@include respond-to(small-lap-bridge)
 		{
 			float: left;
