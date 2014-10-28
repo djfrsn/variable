@@ -98,7 +98,7 @@ variable.controller('mainController', function($scope, $rootScope, $location) {
 	
 });
 
- websiteApp.controller('FormController',function($scope, $http) {
+ variable.controller('FormController',function($scope, $http) {
   // creating a blank object to hold our form information.
   //$scope will allow this to pass between controller and view
   $scope.formData = {};

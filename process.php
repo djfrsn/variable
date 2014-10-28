@@ -20,7 +20,7 @@ if ( ! empty($errors)) {
   $data['success'] = true;
   $data['messageSuccess'] = 'Hey! Thanks for reaching out. I will get back to you soon';
   // CHANGE THE TWO LINES BELOW
-  $email_to = "yourEmailHere@gmail.com";
+  $email_to = "dj@dennisjefferson.com";
   $email_subject = "message submission";
   $name = $_POST['name']; // required
   $email_from = $_POST['email']; // required
