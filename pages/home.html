@@ -32,12 +32,25 @@
                             <h1><a ng-href="#work">our work</a></h1>
                              <script type="text/ng-template" id="img.html">
                                 <ul class='rslides'>
-                                  <li ng-repeat="img in imgs">
+                                  <li>
                                     <img class='work_img' src='{{ img.src }}'></img>
                                   </li>
                                 </ul>
                               <a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
                             </script>
+                            <ul rn-carousels>
+                                  <!-- ngRepeat: img in imgs --><li class="ng-scope">
+                                    <img class="work_img" src="lib/imgs/1.jpg">
+                                  </li><!-- end ngRepeat: img in imgs --><li class="ng-scope">
+                                    <img class="work_img" src="lib/imgs/2.jpg">
+                                  </li><!-- end ngRepeat: img in imgs --><li class="ng-scope">
+                                    <img class="work_img" src="lib/imgs/3.jpg">
+                                  </li><!-- end ngRepeat: img in imgs --><li class="ng-scope">
+                                    <img class="work_img" src="lib/imgs/4.jpg">
+                                  </li><!-- end ngRepeat: img in imgs --><li class="ng-scope">
+                                    <img class="work_img" src="lib/imgs/5.jpg">
+                                  </li><!-- end ngRepeat: img in imgs -->
+                                </ul>
                             <div class="crop first"><a ng-click="open()"><img src='lib/imgs/1.jpg'></a></div>
                             <div class="crop"><a ng-click="open()"><img src='lib/imgs/2.jpg'></a></div>
                             <div class="crop"><a ng-click="open()"><img src='lib/imgs/3.jpg'></a></div>
