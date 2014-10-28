@@ -120,7 +120,7 @@ function ContactController($scope, $http) {
       headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json',
-        'X-Postmark-Server-Token': '8569dcd45-6a1a-4e7b-ae75-ea37629de4'
+        'X-Postmark-Server-Token': 'a797be9f-2613-43f9-ac8c-d05a95ea6a61'
       }
     }).
     success(function (data) {
