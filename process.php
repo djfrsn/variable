@@ -25,10 +25,10 @@ if ( ! empty($errors)) {
   $name = $_POST['name']; // required
   $email_from = $_POST['email']; // required
   $message = $_POST['message']; // required
-  $email_message = "Form details below.nn";
+  $email_message = "Form details:";
   $email_message .= "Name: ".$name."n";
-  $email_message .= "Email: ".$email_from."n";
-  $email_message .= "Message: ".$message."n";
+  $email_message .= "Email: ".$email_from.;
+  $email_message .= "Message: ".$message.;
   $headers = 'From: '.$email_from."rn".
   'Reply-To: '.$email_from."rn" .
   'X-Mailer: PHP/' . phpversion();
