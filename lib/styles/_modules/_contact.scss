@@ -132,16 +132,17 @@ textarea:focus {
 	color: $tertiary;
 }
 .error {
-  background-color: rgba(255, 0, 0, 0.2);
+	background-color: rgba(255, 0, 0, 0.2);
 }
 .submissionMessage {
-  background-color: rgba(255,255,255, 0.2);
-  border-radius: 5px;
-  padding: 12px;
-  text-align: center;
-  display: block;
-  box-shadow: 0 0 2px white;
-  width: 60%;
+	background-color: #79BD9A;
+	border-radius: 5px;
+	padding: 12px;
+	@include rem(font-size, 1.4rem);
+	text-align: center;
+	display: block;
+	box-shadow: 0 0 2px #4B5B6E;
+	width: 60%;
 }
 .map_address
 {
