@@ -1,14 +1,21 @@
 <section class="contact row">
             <div class="contact_wrap small-centered small-12 medium-centered medium-7 large-centered large-7 column">
                 <article>
-                  <form ng-submit="submitForm()" ng-controller="FormController" novalidate>
-  <label for="name">Name</label>
-  <input type="text" name="name" ng-model="formData.name" ng-class="{'error' : errorName}">
-  <label for="email">E-mail</label>
-  <input type="email" name="email" ng-model="formData.email" ng-class="{'error' : errorEmail}">
-  <label for="message">Message</label>
+                    <h2>drop me a line</h2>
+ 
+        <form ng-submit="submitForm()" ng-controller="FormController" novalidate>
+  <div class="field">      
+  <input type="text" placeholder='Name' name="name" ng-model="formData.name" ng-class="{'error' : errorName}">
+</div>
+<div class="field">
+  <input type="email" placeholder='Email' name="email" ng-model="formData.email" ng-class="{'error' : errorEmail}">
+  </div>
+    <div class="field">
   <textarea name="message" ng-class="{'error' : errorTextarea}" ng-model="formData.message" cols="30" rows="10"></textarea>
-  <input type="submit" value="Send!" name="submit">
+  </div>
+  <div class="field">
+  <button type="submit" name="submit">Send!</button>
+  </div>
   <div ng-class="{'submissionMessage' : submission}" ng-bind="submissionMessage"></div>
 </form>
                 </article>
