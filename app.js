@@ -98,7 +98,7 @@ variable.controller('mainController', function($scope, $rootScope, $location) {
 	
 });
 
-var ModalDemoCtrl = function ($scope, $modal, $log) {
+var ModalDemoCtrl = function ($scope, $modal, $log, $timeout) {
 	
   $scope.imgs = [
   	{
@@ -120,9 +120,35 @@ var ModalDemoCtrl = function ($scope, $modal, $log) {
   	{
   		src: 'lib/imgs/5.jpg',
   		text: 'image 5'
-  	}
+  	},
+    {
+      src: 'lib/imgs/6.jpg',
+      text: 'image 6'
+    },
+    {
+      src: 'lib/imgs/7.jpg',
+      text: 'image 7'
+    },
+    {
+      src: 'lib/imgs/8.jpg',
+      text: 'image 8'
+    },
+    {
+      src: 'lib/imgs/9.jpg',
+      text: 'image 9'
+    }
   ];
-
+$scope.slider = function(){
+  $timeout(function() {
+        $(".work_slides").responsiveSlides({
+        auto: false,
+        pager: false,
+        nav: true,
+        speed: 500
+  });
+        console.log('pass');
+      }, 250);
+    };
   $scope.open = function () {
 
     var modalInstance = $modal.open({
@@ -131,9 +157,6 @@ var ModalDemoCtrl = function ($scope, $modal, $log) {
       resolve: {
         imgs: function () {
           return $scope.imgs;
-        },
-        rslides: function () {
-
         }
       }
     });

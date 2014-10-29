@@ -308,27 +308,22 @@ img, video, object { max-width: 100%; }
 
 .reveal-modal, dialog { position: absolute; top: 0; left: 0; z-index: 1005; display: none; visibility: hidden; padding: 1.25rem; padding: 1.875rem; width: 100vw; border-radius: 3px; background-color: #4b5b6e; box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
 
-input[type=range] { width: 300px; }
+.work_slides { position: relative; overflow: hidden; margin: 0 auto; padding: 0; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 760px; /* 9 */ max-width: 76rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-height: 490px; /* 9 */ max-height: 49rem; /* 9 */ width: 100%; list-style: none; }
 
-ul[rn-carousel] { overflow: hidden; padding: 0; white-space: nowrap; position: relative; perspective: 1000px; -ms-touch-action: pan-y; touch-action: pan-y; }
-ul[rn-carousel] > li { color: black; backface-visibility: hidden; overflow: visible; vertical-align: top; position: absolute; left: 0; right: 0; white-space: normal; padding: 0; margin: 0; list-style-type: none; width: 100%; height: 100%; display: inline-block; }
+.work_slides .crop { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-height: 344px; /* 9 */ max-height: 34.4rem; /* 9 */ overflow: hidden; }
 
-/* prevent flickering when moving buffer */
-ul[rn-carousel-buffered] > li { display: none; }
+.work_slides li { position: absolute; top: 0; left: 0; display: none; width: 100%; -webkit-backface-visibility: hidden; }
 
-ul[rn-carousel-transition="hexagon"] { overflow: visible; }
+.work_slides li:first-child { position: relative; display: block; float: left; }
 
-/* indicators */
-div.rn-carousel-indicator span { cursor: pointer; color: #666; }
-div.rn-carousel-indicator span.active { color: white; }
+.work_slides img { display: block; float: left; width: 100%; height: auto; border: 0; }
 
-/* prev/next controls */
-.rn-carousel-control { transition: opacity 0.2s ease-out; font-size: 2rem; position: absolute; top: 40%; opacity: 0.75; cursor: pointer; }
-.rn-carousel-control:hover { opacity: 1; }
-.rn-carousel-control.rn-carousel-control-prev { left: 0.5em; }
-.rn-carousel-control.rn-carousel-control-prev:before { content: "<"; }
-.rn-carousel-control.rn-carousel-control-next { right: 0.5em; }
-.rn-carousel-control.rn-carousel-control-next:before { content: ">"; }
+.prev, .next { /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ font-size: 12px; /* 9 */ font-size: 1.2rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-top: 15px; /* 9 */ padding-top: 1.5rem; /* 9 */ }
+.prev a:hover, .next a:hover { text-decoration: underline; color: #79bd9a; }
+
+.prev { float: left; }
+
+.next { float: right; }
 
 /******************
 

@@ -31,22 +31,22 @@
                         <div class="work_wrap">
                             <h1><a ng-href="#work">our work</a></h1>
                              <script type="text/ng-template" id="img.html">
-                                <ul class='rslides'>
+                                <ul class='work_slides'>
                                   <li ng-repeat="img in imgs">
                                     <img class='work_img' src='{{ img.src }}'></img>
                                   </li>
                                 </ul>
                               <a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
                             </script>
-                            <div class="crop first"><a ng-click="open()"><img src='lib/imgs/1.jpg'></a></div>
-                            <div class="crop"><a ng-click="open()"><img src='lib/imgs/2.jpg'></a></div>
-                            <div class="crop"><a ng-click="open()"><img src='lib/imgs/3.jpg'></a></div>
-                            <div class="crop first"><a ng-click="open()"><img src='lib/imgs/4.jpg'></a></div>
-                            <div class="crop"><a ng-click="open()"><img src='lib/imgs/5.jpg'></a></div>
-                            <div class="crop"><a ng-click="open()"><img src='lib/imgs/6.jpg'></a></div>
-                            <div class="crop first"><a ng-click="open()"><img src='lib/imgs/7.jpg'></a></div>
-                            <div class="crop"><a ng-click="open()"><img src='lib/imgs/8.jpg'></a></div>
-                            <div class="crop"><a ng-click="open()"><img src='lib/imgs/9.jpg'></a></div></div>
+                            <div class="crop first"><a ng-click="open(); slider();"><img src='lib/imgs/1.jpg'></a></div>
+                            <div class="crop"><a ng-click="open(); slider();"><img src='lib/imgs/2.jpg'></a></div>
+                            <div class="crop"><a ng-click="open(); slider();"><img src='lib/imgs/3.jpg'></a></div>
+                            <div class="crop first"><a ng-click="open(); slider();"><img src='lib/imgs/4.jpg'></a></div>
+                            <div class="crop"><a ng-click="open(); slider();"><img src='lib/imgs/5.jpg'></a></div>
+                            <div class="crop"><a ng-click="open(); slider();"><img src='lib/imgs/6.jpg'></a></div>
+                            <div class="crop first"><a ng-click="open(); slider();"><img src='lib/imgs/7.jpg'></a></div>
+                            <div class="crop"><a ng-click="open(); slider();"><img src='lib/imgs/8.jpg'></a></div>
+                            <div class="crop"><a ng-click="open(); slider();"><img src='lib/imgs/9.jpg'></a></div></div>
                         </div>
                     </div>
                 </section>

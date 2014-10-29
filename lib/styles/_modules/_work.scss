@@ -99,80 +99,66 @@ dialog {
     box-shadow: 0 0 10px rgba(0,0,0,0.4);
 }
 
-input[type=range] {
-  width:300px;
-}
-
-ul[rn-carousel] {
-  overflow:hidden;
-  padding:0;
-  white-space: nowrap;
+.work_slides {
   position: relative;
-  perspective:1000px;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  > li {
-    color:black;
-    backface-visibility: hidden;
-    overflow: visible;
-    vertical-align: top;
-    position:absolute;
-    left:0;
-    right:0;
-    white-space: normal;
-    padding:0;
-    margin:0;
-    list-style-type:none;
-    width:100%;
-    height:100%;
-    display:inline-block;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  @include rem(max-width, 76rem); 
+  @include rem(max-height, 49rem);
+  width: 100%;
+  list-style: none;
   }
-}
+ .work_slides .crop
+ {
+ 	@include rem(max-height, 34.4rem);
+ 	overflow: hidden;
+ }
 
-/* prevent flickering when moving buffer */
-ul[rn-carousel-buffered] > li {
-  display:none;
-}
-
-ul[rn-carousel-transition="hexagon"] {
-  overflow:visible;
-}
-
-/* indicators */
-div.rn-carousel-indicator span {
-  cursor:pointer;
-  color: #666;
-  &.active {
-    color: white
-  }
-}
-
-/* prev/next controls */
-.rn-carousel-control {
-  transition: opacity 0.2s ease-out;
-  font-size: 2rem;
+.work_slides li {
   position: absolute;
-  top: 40%;
-  opacity: 0.75;
-  cursor: pointer;
-  &:hover {
-    opacity: 1;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+
+  -webkit-backface-visibility: hidden;
   }
 
-  &.rn-carousel-control-prev {
-    left: 0.5em;
-    &:before {
-      content: "<";
-    }
+.work_slides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
   }
 
-  &.rn-carousel-control-next {
-    right: 0.5em;
-    &:before {
-      content: ">";
-    }
+.work_slides img {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto;
+  border: 0;
   }
+
+.prev, .next
+{
+	@include rem(font-size, 1.2rem);
+	@include rem(padding-top, 15px);
+	a:hover
+	{
+		text-decoration: underline;
+		color: $tertiary;
+	}
 }
+
+.prev
+{
+	float: left;
+}
+
+.next
+{
+	float: right;
+}   
 
 /******************
 
