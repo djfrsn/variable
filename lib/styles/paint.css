@@ -539,6 +539,7 @@ section.download_studio.row { margin: 0; padding: 0; max-width: 100%; width: 100
 .footer { background-color: #79bd9a; color: #f1f2df; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding: 30px 10px; /* 9 */ padding: 3rem 1rem; /* 9 */ }
 .footer p { text-align: center; }
 .footer i { color: #4b5b6e; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-right: 5px; /* 9 */ padding-right: 0.5rem; /* 9 */ }
+.footer a:hover { text-decoration: underline; }
 
 /* 600px */
 @media (min-width: 37.5em) { .footer_social_icons { float: right; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ padding-right: 50px; /* 9 */ padding-right: 5rem; /* 9 */ } }
