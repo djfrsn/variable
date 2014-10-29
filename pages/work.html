@@ -1,16 +1,24 @@
- <section class='work_page row'>
+ <section class='work_page row' ng-controller='ModalDemoCtrl'>
         <div class='medium-12 large-12 column'>
-                <h1>our work</h1>
+            <h1>our work</h1>
+            <script type="text/ng-template" id="img.html">
+                <ul class='work_slides'>
+                  <li ng-repeat="img in imgs">
+                    <img class='work_img' src='{{ img.src }}'></img>
+                  </li>
+                </ul>
+              <a class="close-reveal-modal" ng-click="cancel()">&#215;</a>
+            </script>
             <ul class='small-block-grid-1 medium-block-grid-2 large-block-grid-3'>
-                <li><img src='lib/imgs/1.jpg'></li>
-                <li><img src='lib/imgs/2.jpg'></li>
-                <li><img src='lib/imgs/8.jpg'></li>
-                <li><img src='lib/imgs/10.jpg'></li>
-                <li><img src='lib/imgs/5.jpg'></li>
-                <li><img src='lib/imgs/4.jpg'></li>
-                <li><img src='lib/imgs/3.jpg'></li>
-                <li><img src='lib/imgs/9.jpg'></li>
-                <li><img src='lib/imgs/6.jpg'></li>
+                <li><a ng-click="open(); slider();"><img src='lib/imgs/1.jpg'></a></li>
+                <li><a ng-click="open(); slider();"><img src='lib/imgs/2.jpg'></a></li>
+                <li><a ng-click="open(); slider();"><img src='lib/imgs/8.jpg'></a></li>
+                <li><a ng-click="open(); slider();"><img src='lib/imgs/10.jpg'></a></li>
+                <li><a ng-click="open(); slider();"><img src='lib/imgs/5.jpg'></a></li>
+                <li><a ng-click="open(); slider();"><img src='lib/imgs/4.jpg'></a></li>
+                <li><a ng-click="open(); slider();"><img src='lib/imgs/3.jpg'></a></li>
+                <li><a ng-click="open(); slider();"><img src='lib/imgs/9.jpg'></a></li>
+                <li><a ng-click="open(); slider();"><img src='lib/imgs/6.jpg'></a></li>
             </ul>
         </div>
 </section>
