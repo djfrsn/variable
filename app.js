@@ -144,10 +144,10 @@ $scope.slider = function(){
         auto: false,
         pager: false,
         nav: true,
-        speed: 500
+        speed: 500,
   });
         console.log('pass');
-      }, 250);
+      }, 99);
     };
   $scope.open = function () {
 
