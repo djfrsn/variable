@@ -446,6 +446,7 @@ aside ul:nth-of-type(2) { display: inline-block; /* 768px */ }
 aside ul:last-of-type { display: inline-block; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin-bottom: 40px; /* 9 */ margin-bottom: 4rem; /* 9 */ /* 768px */ }
 @media (min-width: 48em) { aside ul:last-of-type { display: block; } }
 aside li:before { position: relative; top: 0.9em; left: -1em; display: block; width: 4px; height: 5px; background: url(../imgs/marker-1.png); content: ""; }
+aside a:hover { text-decoration: underline; color: #79bd9a; }
 
 .process { background-color: #4b5b6e; }
 .process article { background-color: black; /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ /* 4 */ /* 5 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ margin: 10px 0 35px; /* 9 */ margin: 1rem 0 3.5rem; /* 9 */ /* 3 */ /* 3 */ /* 4 */ /* 6 */ /* 6 */ /* 7 */ max-width: 540px; /* 9 */ max-width: 54rem; /* 9 */ /* 1024px */ }

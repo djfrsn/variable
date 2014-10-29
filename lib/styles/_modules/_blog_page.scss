@@ -232,5 +232,10 @@ aside
     background: url(../imgs/marker-1.png); 
     content: "";
 	}
+	a:hover
+	{
+		text-decoration: underline;
+		color: $tertiary;
+	}
 }
 
