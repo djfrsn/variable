@@ -99,12 +99,7 @@ variable.controller('mainController', function($scope, $rootScope, $location) {
 });
 
 var ModalDemoCtrl = function ($scope, $modal, $log, $timeout, $element) {
-	 $scope.hello = false;
-   $scope.hi = function () {
-       $scope.hello = true;
-       var elm = $('.hello').html();
-       console.log(elm);
-    }
+
   $scope.imgs = [
   	{
   		src: 'lib/imgs/1.jpg',
@@ -150,17 +145,12 @@ var ModalDemoCtrl = function ($scope, $modal, $log, $timeout, $element) {
       $(".work_slides").responsiveSlides({
         auto: false,
         pager: false,
+        random: true,
         nav: true,
         speed: 500,
       });
-    }, 99);
+    }, 1);
   };
-
-  $scope.childe = function(e) {
-    var selectedEl = angular.element(e.srcElement); 
-      console.log(selectedEl);
-      selectedEl.addClass('hello');
-  }
 
   $scope.open = function () {
 
