@@ -83,6 +83,10 @@ variable.controller('mainController', function($scope, $rootScope, $location) {
 				url: '#contact'
 			}
 			];
+      
+      // Set PageSpeed link to mobile
+      $('.pagespeed').attr('href', 'https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fdennisjefferson.com%2Fvar&tab=mobile');
+ 
         } 
 
     // Pair the header to the detected device dir    
@@ -137,7 +141,7 @@ var ModalDemoCtrl = function ($scope, $modal, $log, $timeout, $element) {
       src: 'lib/imgs/9.jpg',
       text: 'image 9'
     }
-  ];
+ ];
   
   // Initialize slider when thumbnail is clicked
   $scope.slider = function(){
