@@ -98,8 +98,13 @@ variable.controller('mainController', function($scope, $rootScope, $location) {
 	
 });
 
-var ModalDemoCtrl = function ($scope, $modal, $log, $timeout) {
-	
+var ModalDemoCtrl = function ($scope, $modal, $log, $timeout, $element) {
+	 $scope.hello = false;
+   $scope.hi = function () {
+       $scope.hello = true;
+       var elm = $('.hello').html();
+       console.log(elm);
+    }
   $scope.imgs = [
   	{
   		src: 'lib/imgs/1.jpg',
@@ -138,17 +143,25 @@ var ModalDemoCtrl = function ($scope, $modal, $log, $timeout) {
       text: 'image 9'
     }
   ];
-$scope.slider = function(){
-  $timeout(function() {
-        $(".work_slides").responsiveSlides({
+  
+  // Initialize slider when thumbnail is clicked
+  $scope.slider = function(){
+    $timeout(function() {
+      $(".work_slides").responsiveSlides({
         auto: false,
         pager: false,
         nav: true,
         speed: 500,
-  });
-        console.log('pass');
-      }, 99);
-    };
+      });
+    }, 99);
+  };
+
+  $scope.childe = function(e) {
+    var selectedEl = angular.element(e.srcElement); 
+      console.log(selectedEl);
+      selectedEl.addClass('hello');
+  }
+
   $scope.open = function () {
 
     var modalInstance = $modal.open({
